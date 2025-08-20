@@ -1,0 +1,33 @@
+@use "../base/colors" as *;
+
+.logo-btn {
+    position: relative;
+    display: inline-block;
+
+    padding-left: 64px;
+    z-index: 1;
+
+    line-height: 0; //? no text in this element
+
+    &__img {
+        min-width: fit-content;
+        min-height: fit-content;
+    }
+
+    &::after {
+        content: "";
+
+        position: absolute;
+
+        width: 406px;
+        height: 1px;
+
+        top: calc(50%);
+        transform: translateY(-50%);
+
+        left: 100%;
+        margin-left: 64px;
+
+        background-color: rgba($color: $color__white, $alpha: 25%);
+    }
+}

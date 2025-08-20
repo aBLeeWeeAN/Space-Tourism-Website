@@ -3,7 +3,9 @@
 @use "../utilities/spacing" as *;
 
 .site-navigation {
-    padding: 0 64px 0 87px;
+    box-sizing: content-box;
+
+    padding: 0 64px 0 159px;
 
     background-color: rgba($color: $color__white, $alpha: 5%);
     backdrop-filter: blur(80px);
