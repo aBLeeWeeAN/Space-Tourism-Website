@@ -1,0 +1,40 @@
+// @use "../base/colors";
+// @use "../base/variables";
+
+.body {
+    // background-color: colors.$background-color;
+    // color: colors.$primary-color;
+
+    overflow-x: auto;
+    overflow-y: scroll;
+
+    // section#hero {
+    //   z-index: 20;
+    // }
+
+    // section:not(#hero) {
+    //   z-index: 0;
+    // }
+
+    // scroll-behavior: smooth;
+
+    // height: 100vh;
+
+    background: url("../../../public/assets/images/background/homepage_background.jpg");
+
+    // background-position: initial;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &--destination {
+        background: url("../../../public/assets/images/background/destination_background.jpg");
+    }
+
+    &--crew {
+        background: url("../../../public/assets/images/background/crew_background.jpg");
+    }
+
+    &--technology {
+        background: url("../../../public/assets/images/background/technology_background.jpg");
+    }
+}

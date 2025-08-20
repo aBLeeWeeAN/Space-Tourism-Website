@@ -1,0 +1,85 @@
+@use "../base/colors" as *;
+@use "../base/typography" as *;
+@use "../utilities/spacing" as *;
+
+.site-navigation {
+    padding: 0 64px 0 87px;
+
+    background-color: rgba($color: $color__white, $alpha: 5%);
+    backdrop-filter: blur(80px);
+
+    &__list {
+        display: flex;
+        flex-direction: row;
+
+        column-gap: $sp-600;
+
+        list-style: none;
+        // list-style-type: decimal-leading-zero;
+        // list-style-position: inside;
+    }
+
+    &__item {
+        @extend .tp-8;
+
+        counter-increment: nav-counter;
+
+        // &::marker {
+        //     margin-right: $sp-150;
+        //     font-weight: $bold;
+        // }
+    }
+
+    &__link {
+        position: relative;
+
+        display: flex;
+        flex-direction: row;
+
+        justify-content: center;
+        align-items: center;
+
+        column-gap: $sp-150;
+
+        width: auto;
+        min-height: 96px;
+
+        cursor: pointer;
+
+        &::before {
+            content: counter(nav-counter, decimal-leading-zero);
+            // margin-right: $sp-150;
+            font-weight: $bold;
+        }
+
+        &::after {
+            content: "";
+
+            position: absolute;
+
+            width: auto;
+            min-height: 3px;
+
+            left: 0;
+            right: 0;
+            bottom: 0;
+
+            background-color: transparent;
+
+            will-change: background-color;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        &:hover {
+            &::after {
+                background-color: rgba($color: $color__white, $alpha: 50%);
+            }
+        }
+
+        &:active {
+            &::after {
+                background-color: rgba($color: $color__white, $alpha: 100%);
+            }
+        }
+    }
+}

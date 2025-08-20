@@ -1,0 +1,16 @@
+@use "../utilities/spacing" as *;
+
+.wrapper {
+    margin: 0 auto;
+
+    max-width: 1440px;
+    height: auto;
+
+    padding: $sp-1600 165px;
+
+    &--large {
+        // max-width: 1440px;
+
+        padding: 0;
+    }
+}

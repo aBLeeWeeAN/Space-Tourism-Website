@@ -1,0 +1,27 @@
+{
+    // Visit https://aka.ms/tsconfig to read more about this file
+    "compilerOptions": {
+        "rootDir": "./src/ts", // исходники TS
+        "outDir": "./public/js", // куда компилируем JS
+
+        "module": "ESNext", // современный модульный синтаксис
+        "target": "ES6", // таргетируем ES6
+
+        "lib": ["DOM", "ES6"], // библиотеки для TS
+
+        "strict": true, // включить строгий режим для безопасного кода
+        "noImplicitAny": true, // запрещает неявный any
+        "skipLibCheck": true, // пропуск проверки типов библиотек
+
+        "forceConsistentCasingInFileNames": true,
+
+        "esModuleInterop": true, // чтобы корректно импортировать CommonJS модули
+        "allowSyntheticDefaultImports": true,
+
+        "sourceMap": true, // генерировать sourcemap
+        "removeComments": true, // удалять комментарии из JS
+        "incremental": true // ускоренная компиляция
+    },
+    "include": ["src/ts/**/*.ts"], // какие файлы компилировать
+    "exclude": ["node_modules"] // что игнорировать
+}

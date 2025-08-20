@@ -1,0 +1,179 @@
+//? --- TYPOGRAPHY SETTINGS HERE
+//? ----------------------------
+
+@use "./colors" as *;
+
+//? --- Font weights variables
+//? --------------------------
+$thin: 100;
+$extralight: 200;
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semibold: 600;
+$bold: 700;
+$extrabold: 800;
+$black: 900;
+$extrablack: 950;
+
+//? --- Text preset 1
+//? -----------------
+
+.tp-1 {
+    font-family: "Bellefair", serif;
+    font-weight: $regular;
+    font-style: normal;
+
+    font-size: 144px;
+
+    line-height: 171.9%;
+    letter-spacing: 0;
+
+    color: $color__white;
+
+    text-transform: uppercase;
+}
+
+//? --- Text preset 2
+//? -----------------
+
+.tp-2 {
+    font-family: "Bellefair", serif;
+    font-weight: $regular;
+    font-style: normal;
+
+    font-size: 100px;
+
+    line-height: 64.2%;
+    letter-spacing: 0;
+
+    color: $color__white;
+
+    text-transform: uppercase;
+}
+
+//? --- Text preset 3
+//? -----------------
+
+.tp-3 {
+    font-family: "Bellefair", serif;
+    font-weight: $regular;
+    font-style: normal;
+
+    font-size: 56px;
+
+    line-height: 64.2%;
+    letter-spacing: 0;
+
+    color: $color__white;
+
+    text-transform: uppercase;
+}
+
+//? --- Text preset 4
+//? -----------------
+
+.tp-4 {
+    font-family: "Bellefair", serif;
+    font-weight: $regular;
+    font-style: normal;
+
+    font-size: 32px;
+
+    line-height: 36.7%;
+    letter-spacing: 0;
+
+    color: $color__white;
+
+    text-transform: uppercase;
+}
+
+//? --- Text preset 5
+//? -----------------
+
+.tp-5 {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: $regular;
+    font-style: normal;
+
+    font-size: 28px;
+
+    line-height: 33.6%;
+    letter-spacing: 4px;
+
+    color: $color__blue-300;
+
+    text-transform: uppercase;
+}
+
+//? --- Text preset 6
+//? -----------------
+
+.tp-6 {
+    font-family: "Bellefair", serif;
+    font-weight: $regular;
+    font-style: normal;
+
+    font-size: 28px;
+
+    line-height: 32.1%;
+    letter-spacing: 0;
+
+    color: $color__white;
+
+    text-transform: uppercase;
+}
+
+//? --- Text preset 7
+//? -----------------
+
+.tp-7 {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: $regular;
+    font-style: normal;
+
+    font-size: 14px;
+
+    line-height: 16.8%;
+    letter-spacing: 2px;
+
+    color: $color__white;
+
+    text-transform: uppercase;
+}
+
+//? --- Text preset 8
+//? -----------------
+
+.tp-8 {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: $regular;
+    font-style: normal;
+
+    font-size: 16px;
+
+    line-height: 19.2%;
+    letter-spacing: 2px;
+
+    color: $color__white;
+
+    text-transform: uppercase;
+}
+
+//? --- Text preset 9
+//? -----------------
+
+.tp-9 {
+    font-family: "Barlow", sans-serif;
+    font-weight: $regular;
+    font-style: normal;
+
+    font-size: 18px;
+
+    line-height: 180%;
+    letter-spacing: 0;
+
+    color: $color__white;
+
+    text-transform: none;
+}
