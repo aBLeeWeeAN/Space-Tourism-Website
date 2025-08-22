@@ -1,7 +1,7 @@
 //? --- TYPOGRAPHY SETTINGS HERE
 //? ----------------------------
 
-@use "./colors" as *;
+@use "./colors";
 
 //? --- Font weights variables
 //? --------------------------
@@ -19,17 +19,19 @@ $extrablack: 950;
 //? --- Text preset 1
 //? -----------------
 
-.tp-1 {
+@mixin tp-1 {
     font-family: "Bellefair", serif;
     font-weight: $regular;
     font-style: normal;
 
     font-size: 144px;
 
-    line-height: 171.9%;
+    // line-height: 171.9%;
+    line-height: normal;
+
     letter-spacing: 0;
 
-    color: $color__white;
+    color: colors.$color__white;
 
     text-transform: uppercase;
 }
@@ -37,17 +39,19 @@ $extrablack: 950;
 //? --- Text preset 2
 //? -----------------
 
-.tp-2 {
+@mixin tp-2 {
     font-family: "Bellefair", serif;
     font-weight: $regular;
     font-style: normal;
 
     font-size: 100px;
 
-    line-height: 64.2%;
+    // line-height: 64.2%;
+    line-height: normal;
+
     letter-spacing: 0;
 
-    color: $color__white;
+    color: colors.$color__white;
 
     text-transform: uppercase;
 }
@@ -55,17 +59,19 @@ $extrablack: 950;
 //? --- Text preset 3
 //? -----------------
 
-.tp-3 {
+@mixin tp-3 {
     font-family: "Bellefair", serif;
     font-weight: $regular;
     font-style: normal;
 
     font-size: 56px;
 
-    line-height: 64.2%;
+    // line-height: 64.2%;
+    line-height: normal;
+
     letter-spacing: 0;
 
-    color: $color__white;
+    color: colors.$color__white;
 
     text-transform: uppercase;
 }
@@ -73,35 +79,51 @@ $extrablack: 950;
 //? --- Text preset 4
 //? -----------------
 
-.tp-4 {
+@mixin tp-4 {
     font-family: "Bellefair", serif;
     font-weight: $regular;
     font-style: normal;
 
     font-size: 32px;
 
-    line-height: 36.7%;
+    // line-height: 36.7%;
+    line-height: normal;
+
     letter-spacing: 0;
 
-    color: $color__white;
+    color: colors.$color__white;
 
     text-transform: uppercase;
+}
+
+@mixin tp-4--dark {
+    @include tp-4;
+
+    color: colors.$color__blue-900;
+}
+
+@mixin tp-4--alpha-50 {
+    @include tp-4;
+
+    color: rgba($color: colors.$color__blue-900, $alpha: 0.5);
 }
 
 //? --- Text preset 5
 //? -----------------
 
-.tp-5 {
+@mixin tp-5 {
     font-family: "Barlow Condensed", sans-serif;
     font-weight: $regular;
     font-style: normal;
 
     font-size: 28px;
 
-    line-height: 33.6%;
+    // line-height: 33.6%;
+    line-height: normal;
+
     letter-spacing: 4px;
 
-    color: $color__blue-300;
+    color: colors.$color__blue-300;
 
     text-transform: uppercase;
 }
@@ -109,17 +131,19 @@ $extrablack: 950;
 //? --- Text preset 6
 //? -----------------
 
-.tp-6 {
+@mixin tp-6 {
     font-family: "Bellefair", serif;
     font-weight: $regular;
     font-style: normal;
 
     font-size: 28px;
 
-    line-height: 32.1%;
+    // line-height: 32.1%;
+    line-height: normal;
+
     letter-spacing: 0;
 
-    color: $color__white;
+    color: colors.$color__white;
 
     text-transform: uppercase;
 }
@@ -127,17 +151,19 @@ $extrablack: 950;
 //? --- Text preset 7
 //? -----------------
 
-.tp-7 {
+@mixin tp-7 {
     font-family: "Barlow Condensed", sans-serif;
     font-weight: $regular;
     font-style: normal;
 
     font-size: 14px;
 
-    line-height: 16.8%;
+    // line-height: 16.8%;
+    line-height: normal;
+
     letter-spacing: 2px;
 
-    color: $color__white;
+    color: colors.$color__white;
 
     text-transform: uppercase;
 }
@@ -145,25 +171,34 @@ $extrablack: 950;
 //? --- Text preset 8
 //? -----------------
 
-.tp-8 {
+@mixin tp-8 {
     font-family: "Barlow Condensed", sans-serif;
     font-weight: $regular;
     font-style: normal;
 
     font-size: 16px;
 
-    line-height: 19.2%;
+    // line-height: 19.2%;
+    line-height: normal;
+
     letter-spacing: 2px;
 
-    color: $color__white;
+    color: colors.$color__white;
 
     text-transform: uppercase;
+}
+
+@mixin tp-8--bold {
+    @include tp-8;
+
+    font-weight: $bold;
+    letter-spacing: 2.7px;
 }
 
 //? --- Text preset 9
 //? -----------------
 
-.tp-9 {
+@mixin tp-9 {
     font-family: "Barlow", sans-serif;
     font-weight: $regular;
     font-style: normal;
@@ -173,7 +208,7 @@ $extrablack: 950;
     line-height: 180%;
     letter-spacing: 0;
 
-    color: $color__white;
+    color: colors.$color__white;
 
     text-transform: none;
 }

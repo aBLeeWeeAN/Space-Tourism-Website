@@ -1,0 +1,51 @@
+@use "../base/typography";
+@use "../base/colors";
+
+@use "../utilities/spacing";
+
+.homepage {
+    &__content {
+        display: flex;
+        flex-direction: row;
+
+        justify-content: space-between;
+        align-items: center;
+
+        padding-top: 289px;
+
+        column-gap: 30px;
+    }
+
+    &__text-container {
+        display: inline-flex;
+        flex-direction: column;
+
+        max-width: 540px;
+
+        row-gap: spacing.$spacing-300;
+    }
+
+    &__button-container {
+        display: inline-flex;
+        flex-direction: row;
+
+        justify-content: flex-end;
+        align-items: center;
+
+        max-width: 540px;
+    }
+
+    &__title {
+        @include typography.tp-1;
+    }
+
+    &__tagline {
+        @include typography.tp-5;
+    }
+
+    &__paragraph {
+        @include typography.tp-9;
+
+        color: colors.$color__blue-300;
+    }
+}

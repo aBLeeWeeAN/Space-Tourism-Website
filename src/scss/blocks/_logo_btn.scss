@@ -1,11 +1,11 @@
-@use "../base/colors" as *;
-@use "../utilities/spacing" as *;
+@use "../base/colors";
+@use "../utilities/spacing";
 
 .logo-btn {
     position: relative;
     display: inline-block;
 
-    padding-left: $spacing-800;
+    padding-left: spacing.$spacing-800;
     z-index: 1;
 
     line-height: 0; //? no text in this element
@@ -27,8 +27,8 @@
         transform: translateY(-50%);
 
         left: 100%;
-        margin-left: $spacing-800;
+        margin-left: spacing.$spacing-800;
 
-        background-color: rgba($color: $color__white, $alpha: 25%);
+        background-color: rgba($color: colors.$color__white, $alpha: 25%);
     }
 }

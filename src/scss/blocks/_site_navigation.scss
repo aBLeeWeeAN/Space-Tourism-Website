@@ -1,20 +1,20 @@
-@use "../base/colors" as *;
-@use "../base/typography" as *;
-@use "../utilities/spacing" as *;
+@use "../base/colors";
+@use "../base/typography";
+@use "../utilities/spacing";
 
 .site-navigation {
     box-sizing: content-box;
 
-    padding: 0 $spacing-800 0 159px;
+    padding: 0 spacing.$spacing-800 0 159px;
 
-    background-color: rgba($color: $color__white, $alpha: 5%);
+    background-color: rgba($color: colors.$color__white, $alpha: 5%);
     backdrop-filter: blur(80px);
 
     &__list {
         display: flex;
         flex-direction: row;
 
-        column-gap: $spacing-600;
+        column-gap: spacing.$spacing-600;
 
         list-style: none;
         // list-style-type: decimal-leading-zero;
@@ -22,12 +22,12 @@
     }
 
     &__item {
-        @extend .tp-8;
+        @include typography.tp-8;
 
         counter-increment: nav-counter;
 
         // &::marker {
-        //     margin-right: $spacing-150;
+        //     margin-right: spacing.$spacing-150;
         //     font-weight: $bold;
         // }
     }
@@ -41,7 +41,7 @@
         justify-content: center;
         align-items: center;
 
-        column-gap: $spacing-150;
+        column-gap: spacing.$spacing-150;
 
         width: auto;
         min-height: 96px;
@@ -50,9 +50,11 @@
         cursor: url("../../../public/assets/images/icons/pointer/pointer.svg") 3 0, auto;
 
         &::before {
+            @include typography.tp-8--bold;
             content: counter(nav-counter, decimal-leading-zero);
-            // margin-right: $spacing-150;
-            font-weight: $bold;
+
+            // margin-right: spacing.$spacing-150;
+            // font-weight: $bold;
         }
 
         &::after {
@@ -75,13 +77,13 @@
 
         &:hover {
             &::after {
-                background-color: rgba($color: $color__white, $alpha: 50%);
+                background-color: rgba($color: colors.$color__white, $alpha: 50%);
             }
         }
 
         &:active {
             &::after {
-                background-color: rgba($color: $color__white, $alpha: 100%);
+                background-color: rgba($color: colors.$color__white, $alpha: 100%);
             }
         }
     }
