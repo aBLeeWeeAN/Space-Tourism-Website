@@ -1,19 +1,19 @@
-//? --- SPACING SETTINGS HERE
+//? --- spacingACING SETTINGS HERE
 //? -------------------------
 
-$sp-1600: 128px;
-$sp-1200: 96px;
-$sp-1000: 80px;
-$sp-800: 64px;
-$sp-600: 48px;
-$sp-500: 40px;
-$sp-400: 32px;
-$sp-300: 24px;
-$sp-200: 16px;
-$sp-150: 12px;
-$sp-100: 8px;
-$sp-50: 4px;
-$sp-25: 2px;
+$spacing-1600: 128px;
+$spacing-1200: 96px;
+$spacing-1000: 80px;
+$spacing-800: 64px;
+$spacing-600: 48px;
+$spacing-500: 40px;
+$spacing-400: 32px;
+$spacing-300: 24px;
+$spacing-200: 16px;
+$spacing-150: 12px;
+$spacing-100: 8px;
+$spacing-50: 4px;
+$spacing-25: 2px;
 
 // @mixin m($prop, $side, $value) {
 //     #{$prop}-#{$side}-#{$value} {

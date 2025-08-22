@@ -5,7 +5,7 @@
 .site-navigation {
     box-sizing: content-box;
 
-    padding: 0 64px 0 159px;
+    padding: 0 $spacing-800 0 159px;
 
     background-color: rgba($color: $color__white, $alpha: 5%);
     backdrop-filter: blur(80px);
@@ -14,7 +14,7 @@
         display: flex;
         flex-direction: row;
 
-        column-gap: $sp-600;
+        column-gap: $spacing-600;
 
         list-style: none;
         // list-style-type: decimal-leading-zero;
@@ -27,7 +27,7 @@
         counter-increment: nav-counter;
 
         // &::marker {
-        //     margin-right: $sp-150;
+        //     margin-right: $spacing-150;
         //     font-weight: $bold;
         // }
     }
@@ -41,16 +41,17 @@
         justify-content: center;
         align-items: center;
 
-        column-gap: $sp-150;
+        column-gap: $spacing-150;
 
         width: auto;
         min-height: 96px;
 
-        cursor: pointer;
+        // cursor: pointer;
+        cursor: url("../../../public/assets/images/icons/pointer/pointer.svg") 3 0, auto;
 
         &::before {
             content: counter(nav-counter, decimal-leading-zero);
-            // margin-right: $sp-150;
+            // margin-right: $spacing-150;
             font-weight: $bold;
         }
 
