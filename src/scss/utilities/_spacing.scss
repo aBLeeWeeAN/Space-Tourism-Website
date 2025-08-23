@@ -1,6 +1,10 @@
-//? --- spacingACING SETTINGS HERE
-//? -------------------------
+//? addition spacing values
+$spacing-3600: 288px;
 
+$spacing-2050: 164px;
+$spacing-2000: 160px;
+
+//? spacing values from design
 $spacing-1600: 128px;
 $spacing-1200: 96px;
 $spacing-1000: 80px;
@@ -14,41 +18,3 @@ $spacing-150: 12px;
 $spacing-100: 8px;
 $spacing-50: 4px;
 $spacing-25: 2px;
-
-// @mixin m($prop, $side, $value) {
-//     #{$prop}-#{$side}-#{$value} {
-//         #{$prop}-#{$side}: #{$value}px !important;
-//     }
-// }
-
-// // margin
-// @for $i from 0 through 850 {
-//     .mt-#{$i} {
-//         margin-top: #{$i}px !important;
-//     }
-//     .mb-#{$i} {
-//         margin-bottom: #{$i}px !important;
-//     }
-//     .ml-#{$i} {
-//         margin-left: #{$i}px !important;
-//     }
-//     .mr-#{$i} {
-//         margin-right: #{$i}px !important;
-//     }
-// }
-
-// // padding
-// @for $i from 0 through 850 {
-//     .pt-#{$i} {
-//         padding-top: #{$i}px !important;
-//     }
-//     .pb-#{$i} {
-//         padding-bottom: #{$i}px !important;
-//     }
-//     .pl-#{$i} {
-//         padding-left: #{$i}px !important;
-//     }
-//     .pr-#{$i} {
-//         padding-right: #{$i}px !important;
-//     }
-// }

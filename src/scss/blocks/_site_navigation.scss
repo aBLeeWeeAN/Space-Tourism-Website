@@ -5,7 +5,7 @@
 .site-navigation {
     box-sizing: content-box;
 
-    padding: 0 spacing.$spacing-800 0 159px;
+    padding: 0 spacing.$spacing-800 0 spacing.$spacing-2000;
 
     background-color: rgba($color: colors.$color__white, $alpha: 5%);
     backdrop-filter: blur(80px);
@@ -82,6 +82,12 @@
         }
 
         &:active {
+            &::after {
+                background-color: rgba($color: colors.$color__white, $alpha: 100%);
+            }
+        }
+
+        &.active {
             &::after {
                 background-color: rgba($color: colors.$color__white, $alpha: 100%);
             }
