@@ -1,0 +1,52 @@
+@use "../base/colors";
+@use "../base/typography";
+
+.tab-panel {
+    display: inline-flex;
+    flex-direction: column;
+
+    align-items: start;
+
+    max-width: 539px;
+    padding: 0 47px;
+
+    &__tab {
+        display: none;
+        flex-direction: column;
+
+        row-gap: 40px;
+
+        &.active {
+            display: inline-flex;
+        }
+    }
+
+    &__text-group {
+        display: inline-flex;
+        flex-direction: column;
+
+        row-gap: 16px;
+    }
+
+    &__title {
+        @include typography.tp-2;
+    }
+
+    &__text {
+        @include typography.tp-9--blue;
+    }
+
+    &__separator {
+        display: block;
+
+        border-top: 1px solid rgba($color: colors.$color__white, $alpha: 0.25);
+        border-radius: 0;
+    }
+
+    &__additional-info {
+        display: inline-flex;
+        justify-content: flex-start;
+
+        column-gap: 96px;
+    }
+}

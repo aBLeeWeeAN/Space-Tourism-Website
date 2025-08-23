@@ -4,9 +4,9 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Space Tourism Website - Destination</title>
-        <link rel="stylesheet" href="./css/main.min.css" />
+        <link rel="stylesheet" href="./css/min/main.css" />
     </head>
-    <body class="body">
+    <body class="body body--destination">
         <header class="header">
             <a href="#!" class="logo-btn">
                 <img class="logo-btn__img" src="./assets/images/icons/logo.svg" alt="Logo icon" />
@@ -21,70 +21,96 @@
             </nav>
         </header>
         <section class="destination">
-            <div class="wrapper">
-                <h2 class="destination__title">PICK YOUR DESTINATION</h2>
+            <div class="wrapper wrapper--destination">
+                <h2 class="destination__title"><span>01</span>PICK YOUR DESTINATION</h2>
                 <div class="destination__content">
-                    <div class="planet">
-                        <img class="planet__img active" src="./assets/images/destination/moon/moon_desktop.png" alt="Moon" />
-                        <img class="planet__img" src="./assets/images/destination/mars/mars_desktop.png" alt="Mars" />
-                        <img class="planet__img" src="./assets/images/destination/europa/europa_desktop.png" alt="Europa" />
-                        <img class="planet__img" src="./assets/images/destination/titan/titan_desktop.png" alt="Titan" />
+                    <div class="planets">
+                        <img
+                            id="planet-moon"
+                            data-planet-name="moon"
+                            class="planets__img active"
+                            src="./assets/images/destination/moon/moon_desktop.png"
+                            alt="Moon" />
+                        <img
+                            id="planet-mars"
+                            data-planet-name="mars"
+                            class="planets__img"
+                            src="./assets/images/destination/mars/mars_desktop.png"
+                            alt="Mars" />
+                        <img
+                            id="planet-europa"
+                            data-planet-name="europa"
+                            class="planets__img"
+                            src="./assets/images/destination/europa/europa_desktop.png"
+                            alt="Europa" />
+                        <img
+                            id="planet-titan"
+                            data-planet-name="titan"
+                            class="planets__img"
+                            src="./assets/images/destination/titan/titan_desktop.png"
+                            alt="Titan" />
                     </div>
-                    <div class="tabs">
-                        <nav class="tabs-navigation">
-                            <ul class="tabs-navigation__list">
-                                <li class="tabs-navigation__item">
+                    <div class="tab-panel">
+                        <nav class="tab-panel-navigation">
+                            <ul class="tab-panel-navigation__list">
+                                <li class="tab-panel-navigation__item">
                                     <button
                                         id="moon-tab-button"
                                         role="tab"
+                                        data-planet-name="moon"
                                         aria-selected="true"
                                         aria-controls="moon-tab"
-                                        class="tabs-navigation__button active">
+                                        class="tab-panel-navigation__button active">
                                         MOON
                                     </button>
                                 </li>
-                                <li class="tabs-navigation__item">
+                                <li class="tab-panel-navigation__item">
                                     <button
                                         id="mars-tab-button"
                                         role="tab"
+                                        data-planet-name="mars"
                                         aria-selected="false"
                                         aria-controls="mars-tab"
-                                        class="tabs-navigation__button">
+                                        class="tab-panel-navigation__button">
                                         MARS
                                     </button>
                                 </li>
-                                <li class="tabs-navigation__item">
+                                <li class="tab-panel-navigation__item">
                                     <button
                                         id="europa-tab-button"
                                         role="tab"
+                                        data-planet-name="europa"
                                         aria-selected="false"
                                         aria-controls="europa-tab"
-                                        class="tabs-navigation__button">
+                                        class="tab-panel-navigation__button">
                                         EUROPA
                                     </button>
                                 </li>
-                                <li class="tabs-navigation__item">
+                                <li class="tab-panel-navigation__item">
                                     <button
                                         id="titan-tab-button"
                                         role="tab"
+                                        data-planet-name="titan"
                                         aria-selected="false"
                                         aria-controls="titan-tab"
-                                        class="tabs-navigation__button">
+                                        class="tab-panel-navigation__button">
                                         TITAN
                                     </button>
                                 </li>
                             </ul>
                         </nav>
 
-                        <div id="moon-tab" role="tabpanel" class="tabs__tab active">
-                            <h3 class="tabs__title">MOON</h3>
-                            <p class="tabs__text">
-                                See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and
-                                come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing
-                                sites.
-                            </p>
-                            <hr />
-                            <div class="tabs__additional-info">
+                        <div id="moon-tab" data-planet-name="moon" role="tabpanel" class="tab-panel__tab active">
+                            <div class="tab-panel__text-group">
+                                <h3 class="tab-panel__title">MOON</h3>
+                                <p class="tab-panel__text">
+                                    See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective
+                                    and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11
+                                    landing sites.
+                                </p>
+                            </div>
+                            <hr class="tab-panel__separator" />
+                            <div class="tab-panel__additional-info">
                                 <div class="additional-info-block">
                                     <h3 class="additional-info-block__title">AVG. DISTANCE</h3>
                                     <p class="additional-info-block__text">384,400 KM</p>
@@ -96,14 +122,16 @@
                             </div>
                         </div>
 
-                        <div id="mars-tab" role="tabpanel" class="tabs__tab">
-                            <h3 class="tabs__title">MARS</h3>
-                            <p class="tabs__text">
-                                Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, the tallest planetary
-                                mountain in our solar system. It’s two and a half times the size of Everest!
-                            </p>
-                            <hr />
-                            <div class="tabs__additional-info">
+                        <div id="mars-tab" data-planet-name="mars" role="tabpanel" class="tab-panel__tab">
+                            <div class="tab-panel__text-group">
+                                <h3 class="tab-panel__title">MARS</h3>
+                                <p class="tab-panel__text">
+                                    Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, the tallest planetary
+                                    mountain in our solar system. It’s two and a half times the size of Everest!
+                                </p>
+                            </div>
+                            <hr class="tab-panel__separator" />
+                            <div class="tab-panel__additional-info">
                                 <div class="additional-info-block">
                                     <h3 class="additional-info-block__title">AVG. DISTANCE</h3>
                                     <p class="additional-info-block__text">225 MIL. KM</p>
@@ -115,15 +143,18 @@
                             </div>
                         </div>
 
-                        <div id="europa-tab" role="tabpanel" class="tabs__tab">
-                            <h3 class="tabs__title">EUROPA</h3>
-                            <p class="tabs__text">
-                                The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter lover’s dream. With an icy
-                                surface, it’s perfect for a bit of ice skating, curling, hockey, or simple relaxation in your snug wintery
-                                cabin.
-                            </p>
-                            <hr />
-                            <div class="tabs__additional-info">
+                        <div id="europa-tab" data-planet-name="europa" role="tabpanel" class="tab-panel__tab">
+                            <div class="tab-panel__text-group">
+                                <h3 class="tab-panel__title">EUROPA</h3>
+                                <p class="tab-panel__text">
+                                    The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter lover’s dream. With an icy
+                                    surface, it’s perfect for a bit of ice skating, curling, hockey, or simple relaxation in your snug
+                                    wintery cabin.
+                                </p>
+                            </div>
+
+                            <hr class="tab-panel__separator" />
+                            <div class="tab-panel__additional-info">
                                 <div class="additional-info-block">
                                     <h3 class="additional-info-block__title">AVG. DISTANCE</h3>
                                     <p class="additional-info-block__text">628 MIL. KM</p>
@@ -135,14 +166,16 @@
                             </div>
                         </div>
 
-                        <div id="titan-tab" role="tabpanel" class="tabs__tab">
-                            <h3 class="tabs__title">TITAN</h3>
-                            <p class="tabs__text">
-                                The only moon known to have a dense atmosphere other than Earth, Titan is a home away from home (just a few
-                                hundred degrees colder!). As a bonus, you get striking views of the Rings of Saturn.
-                            </p>
-                            <hr />
-                            <div class="tabs__additional-info">
+                        <div id="titan-tab" data-planet-name="titan" role="tabpanel" class="tab-panel__tab">
+                            <div class="tab-panel__text-group">
+                                <h3 class="tab-panel__title">TITAN</h3>
+                                <p class="tab-panel__text">
+                                    The only moon known to have a dense atmosphere other than Earth, Titan is a home away from home (just a
+                                    few hundred degrees colder!). As a bonus, you get striking views of the Rings of Saturn.
+                                </p>
+                            </div>
+                            <hr class="tab-panel__separator" />
+                            <div class="tab-panel__additional-info">
                                 <div class="additional-info-block">
                                     <h3 class="additional-info-block__title">AVG. DISTANCE</h3>
                                     <p class="additional-info-block__text">1.6 BIL. KM</p>
@@ -157,6 +190,6 @@
                 </div>
             </div>
         </section>
-        <script src="./js/main.min.js"></script>
+        <script src="./js/min/destination.js"></script>
     </body>
 </html>

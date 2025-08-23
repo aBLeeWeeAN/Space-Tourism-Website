@@ -93,13 +93,13 @@ $extrablack: 950;
     text-transform: uppercase;
 }
 
-@mixin tp-4--dark {
+@mixin tp-4--dark-blue {
     @include tp-4;
 
     color: colors.$color__blue-900;
 }
 
-@mixin tp-4--alpha-50 {
+@mixin tp-4--half-opacity {
     @include tp-4;
 
     color: rgba($color: colors.$color__blue-900, $alpha: 0.5);
@@ -123,6 +123,20 @@ $extrablack: 950;
     color: colors.$color__blue-300;
 
     text-transform: uppercase;
+}
+
+@mixin tp-5--white {
+    @include tp-5;
+    color: colors.$color__white;
+}
+
+@mixin tp-5--white-bold {
+    @include tp-5;
+
+    color: colors.$color__white;
+    font-weight: $bold;
+
+    letter-spacing: 4.72px;
 }
 
 //? --- Text preset 6
@@ -165,6 +179,11 @@ $extrablack: 950;
     text-transform: uppercase;
 }
 
+@mixin tp-7--blue {
+    @include tp-7;
+    color: colors.$color__blue-300;
+}
+
 //? --- Text preset 8
 //? -----------------
 
@@ -183,6 +202,11 @@ $extrablack: 950;
     color: colors.$color__white;
 
     text-transform: uppercase;
+}
+
+@mixin tp-8--blue {
+    @include tp-8;
+    color: colors.$color__blue-300;
 }
 
 @mixin tp-8--bold {
@@ -208,4 +232,9 @@ $extrablack: 950;
     color: colors.$color__white;
 
     text-transform: none;
+}
+
+@mixin tp-9--blue {
+    @include tp-9;
+    color: colors.$color__blue-300;
 }

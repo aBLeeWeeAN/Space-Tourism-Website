@@ -2,7 +2,7 @@
 @use "../base/typography";
 
 .explore-btn {
-    @include typography.tp-4--dark;
+    @include typography.tp-4--dark-blue;
 
     position: relative;
 
@@ -56,7 +56,7 @@
     }
 
     &:hover {
-        @include typography.tp-4--alpha-50;
+        @include typography.tp-4--half-opacity;
 
         &::before {
             width: calc(272px + 88px * 2);
