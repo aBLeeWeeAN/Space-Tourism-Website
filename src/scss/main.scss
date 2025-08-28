@@ -26,16 +26,16 @@
 @use "layout/header";
 @use "layout/footer";
 
-//? --- BLOCKS
-@use "blocks/site_navigation";
-@use "blocks/tab_panel_navigation";
+//? --- components
+@use "components/site_navigation";
+@use "components/tab_panel_navigation";
 
-@use "blocks/logo_btn";
-@use "blocks/explore_btn";
+@use "components/logo_btn";
+@use "components/explore_btn";
 
-@use "blocks/planets";
-@use "blocks/tab_panel";
-@use "blocks/additional_info_block";
+@use "components/planets";
+@use "components/tab_panel";
+@use "components/additional_info_block";
 
 //? --- SECTIONS
 @use "sections/homepage";
