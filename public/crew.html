@@ -8,188 +8,142 @@
     </head>
     <body class="body body--crew">
         <header class="header">
-            <a href="#!" class="logo-btn">
+            <a href="./index.html" class="logo-btn">
                 <img class="logo-btn__img" src="./assets/images/icons/logo.svg" alt="Logo icon" />
             </a>
             <nav class="site-navigation">
                 <ol class="site-navigation__list">
                     <li class="site-navigation__item"><a href="./index.html" class="site-navigation__link">Home</a></li>
-                    <li class="site-navigation__item"><a href="./destination.html" class="site-navigation__link active">Destination</a></li>
-                    <li class="site-navigation__item"><a href="#!" class="site-navigation__link">Crew</a></li>
+                    <li class="site-navigation__item"><a href="./destination.html" class="site-navigation__link">Destination</a></li>
+                    <li class="site-navigation__item"><a href="#!" class="site-navigation__link active">Crew</a></li>
                     <li class="site-navigation__item"><a href="./technology.html" class="site-navigation__link">Technology</a></li>
                 </ol>
             </nav>
         </header>
-        <section class="crew">
-            <div class="wrapper wrapper--crew">
-                <h2 class="destination__title"><span>01</span>PICK YOUR DESTINATION</h2>
-                <div class="destination__content">
-                    <div class="planets">
-                        <img
-                            id="planet-moon"
-                            data-planet-name="moon"
-                            class="planets__img active"
-                            src="./assets/images/destination/moon/moon_desktop.png"
-                            alt="Moon" />
-                        <img
-                            id="planet-mars"
-                            data-planet-name="mars"
-                            class="planets__img"
-                            src="./assets/images/destination/mars/mars_desktop.png"
-                            alt="Mars" />
-                        <img
-                            id="planet-europa"
-                            data-planet-name="europa"
-                            class="planets__img"
-                            src="./assets/images/destination/europa/europa_desktop.png"
-                            alt="Europa" />
-                        <img
-                            id="planet-titan"
-                            data-planet-name="titan"
-                            class="planets__img"
-                            src="./assets/images/destination/titan/titan_desktop.png"
-                            alt="Titan" />
-                    </div>
-                    <div class="tab-panel">
-                        <nav class="tab-panel-navigation">
-                            <ul class="tab-panel-navigation__list">
-                                <li class="tab-panel-navigation__item">
+        <div class="wrapper wrapper--crew">
+            <section class="crew">
+                <h2 class="crew__title"><span>02</span>MEET YOUR CREW</h2>
+                <div class="crew__content">
+                    <div class="tab-panel tab-panel--crew">
+                        <div id="mId__douglas-tab" data-tab-name="douglas" role="tabpanel" class="tab-panel__tab active">
+                            <div class="tab-panel__header-group">
+                                <h4 class="tab-panel__crew-role">Commander</h4>
+                                <h3 class="tab-panel__title">Douglas Hurley</h3>
+                            </div>
+                            <p class="tab-panel__text">
+                                Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He
+                                launched into space for the third time as commander of Crew Dragon Demo-2.
+                            </p>
+                        </div>
+
+                        <div id="mId__mark-tab" data-tab-name="mark" role="tabpanel" class="tab-panel__tab">
+                            <div class="tab-panel__header-group">
+                                <h4 class="tab-panel__crew-role">Mission Specialist</h4>
+                                <h3 class="tab-panel__title">MARK SHUTTLEWORTH</h3>
+                            </div>
+
+                            <p class="tab-panel__text">
+                                Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind the Linux-based Ubuntu
+                                operating system. Shuttleworth became the first South African to travel to space as a space tourist.
+                            </p>
+                        </div>
+
+                        <div id="mId__victor-tab" data-tab-name="victor" role="tabpanel" class="tab-panel__tab">
+                            <div class="tab-panel__header-group">
+                                <h4 class="tab-panel__crew-role">PILOT</h4>
+                                <h3 class="tab-panel__title">Victor Glover</h3>
+                            </div>
+
+                            <p class="tab-panel__text">
+                                Pilot on the first operational flight of the SpaceX Crew Dragon to the International Space Station. Glover
+                                is a commander in the U.S. Navy where he pilots an F/A-18.He was a crew member of Expedition 64, and served
+                                as a station systems flight engineer.
+                            </p>
+                        </div>
+
+                        <div id="mId__anousheh-tab" data-tab-name="anousheh" role="tabpanel" class="tab-panel__tab">
+                            <div class="tab-panel__header-group">
+                                <h4 class="tab-panel__crew-role">Flight Engineer</h4>
+                                <h3 class="tab-panel__title">Anousheh Ansari</h3>
+                            </div>
+
+                            <p class="tab-panel__text">
+                                Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. Ansari was the fourth
+                                self-funded space tourist, the first self-funded woman to fly to the ISS, and the first Iranian in space.
+                            </p>
+                        </div>
+
+                        <nav class="tab-panel__pagination tab-panel-pagination">
+                            <ul class="tab-panel-pagination__list">
+                                <li class="tab-panel-pagination__item">
                                     <button
-                                        id="moon-tab-button"
+                                        id="mId__douglas-tab-button"
                                         role="tab"
-                                        data-planet-name="moon"
+                                        data-tab-name="douglas"
                                         aria-selected="true"
-                                        aria-controls="moon-tab"
-                                        class="tab-panel-navigation__button active">
-                                        MOON
-                                    </button>
+                                        aria-controls="douglas-tab"
+                                        class="tab-panel-pagination__button active"></button>
                                 </li>
-                                <li class="tab-panel-navigation__item">
+                                <li class="tab-panel-pagination__item">
                                     <button
-                                        id="mars-tab-button"
+                                        id="mId__mark-tab-button"
                                         role="tab"
-                                        data-planet-name="mars"
+                                        data-tab-name="mark"
                                         aria-selected="false"
-                                        aria-controls="mars-tab"
-                                        class="tab-panel-navigation__button">
-                                        MARS
-                                    </button>
+                                        aria-controls="mark-tab"
+                                        class="tab-panel-pagination__button"></button>
                                 </li>
-                                <li class="tab-panel-navigation__item">
+                                <li class="tab-panel-pagination__item">
                                     <button
-                                        id="europa-tab-button"
+                                        id="mId__victor-tab-button"
                                         role="tab"
-                                        data-planet-name="europa"
+                                        data-tab-name="victor"
                                         aria-selected="false"
-                                        aria-controls="europa-tab"
-                                        class="tab-panel-navigation__button">
-                                        EUROPA
-                                    </button>
+                                        aria-controls="victor-tab"
+                                        class="tab-panel-pagination__button"></button>
                                 </li>
-                                <li class="tab-panel-navigation__item">
+                                <li class="tab-panel-pagination__item">
                                     <button
-                                        id="titan-tab-button"
+                                        id="mId__anousheh-tab-button"
                                         role="tab"
-                                        data-planet-name="titan"
+                                        data-tab-name="anousheh"
                                         aria-selected="false"
-                                        aria-controls="titan-tab"
-                                        class="tab-panel-navigation__button">
-                                        TITAN
-                                    </button>
+                                        aria-controls="anousheh-tab"
+                                        class="tab-panel-pagination__button"></button>
                                 </li>
                             </ul>
                         </nav>
+                    </div>
 
-                        <div id="moon-tab" data-planet-name="moon" role="tabpanel" class="tab-panel__tab active">
-                            <div class="tab-panel__text-group">
-                                <h3 class="tab-panel__title">MOON</h3>
-                                <p class="tab-panel__text">
-                                    See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective
-                                    and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11
-                                    landing sites.
-                                </p>
-                            </div>
-                            <hr class="tab-panel__separator" />
-                            <div class="tab-panel__additional-info">
-                                <div class="additional-info-block">
-                                    <h3 class="additional-info-block__title">AVG. DISTANCE</h3>
-                                    <p class="additional-info-block__text">384,400 KM</p>
-                                </div>
-                                <div class="additional-info-block">
-                                    <h3 class="additional-info-block__title">EST. TRAVEL TIME</h3>
-                                    <p class="additional-info-block__text">3 DAYS</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div id="mars-tab" data-planet-name="mars" role="tabpanel" class="tab-panel__tab">
-                            <div class="tab-panel__text-group">
-                                <h3 class="tab-panel__title">MARS</h3>
-                                <p class="tab-panel__text">
-                                    Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, the tallest planetary
-                                    mountain in our solar system. It’s two and a half times the size of Everest!
-                                </p>
-                            </div>
-                            <hr class="tab-panel__separator" />
-                            <div class="tab-panel__additional-info">
-                                <div class="additional-info-block">
-                                    <h3 class="additional-info-block__title">AVG. DISTANCE</h3>
-                                    <p class="additional-info-block__text">225 MIL. KM</p>
-                                </div>
-                                <div class="additional-info-block">
-                                    <h3 class="additional-info-block__title">EST. TRAVEL TIME</h3>
-                                    <p class="additional-info-block__text">9 MONTHS</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div id="europa-tab" data-planet-name="europa" role="tabpanel" class="tab-panel__tab">
-                            <div class="tab-panel__text-group">
-                                <h3 class="tab-panel__title">EUROPA</h3>
-                                <p class="tab-panel__text">
-                                    The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter lover’s dream. With an icy
-                                    surface, it’s perfect for a bit of ice skating, curling, hockey, or simple relaxation in your snug
-                                    wintery cabin.
-                                </p>
-                            </div>
-
-                            <hr class="tab-panel__separator" />
-                            <div class="tab-panel__additional-info">
-                                <div class="additional-info-block">
-                                    <h3 class="additional-info-block__title">AVG. DISTANCE</h3>
-                                    <p class="additional-info-block__text">628 MIL. KM</p>
-                                </div>
-                                <div class="additional-info-block">
-                                    <h3 class="additional-info-block__title">EST. TRAVEL TIME</h3>
-                                    <p class="additional-info-block__text">3 YEARS</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div id="titan-tab" data-planet-name="titan" role="tabpanel" class="tab-panel__tab">
-                            <div class="tab-panel__text-group">
-                                <h3 class="tab-panel__title">TITAN</h3>
-                                <p class="tab-panel__text">
-                                    The only moon known to have a dense atmosphere other than Earth, Titan is a home away from home (just a
-                                    few hundred degrees colder!). As a bonus, you get striking views of the Rings of Saturn.
-                                </p>
-                            </div>
-                            <hr class="tab-panel__separator" />
-                            <div class="tab-panel__additional-info">
-                                <div class="additional-info-block">
-                                    <h3 class="additional-info-block__title">AVG. DISTANCE</h3>
-                                    <p class="additional-info-block__text">1.6 BIL. KM</p>
-                                </div>
-                                <div class="additional-info-block">
-                                    <h3 class="additional-info-block__title">EST. TRAVEL TIME</h3>
-                                    <p class="additional-info-block__text">7 YEARS</p>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="pictures pictures--crew">
+                        <img
+                            id="mId__douglas-picture"
+                            data-tab-name="douglas"
+                            class="pictures__img active"
+                            src="./assets/images/crew/douglas/douglas__desktop.png"
+                            alt="Douglas Hurley" />
+                        <img
+                            id="mId__mark-picture"
+                            data-tab-name="mark"
+                            class="pictures__img"
+                            src="./assets/images/crew/mark/mark__desktop.png"
+                            alt="Mark Shuttleworth" />
+                        <img
+                            id="mId__victor-picture"
+                            data-tab-name="victor"
+                            class="pictures__img"
+                            src="./assets/images/crew/victor/victor__desktop.png"
+                            alt="Victor Glover" />
+                        <img
+                            id="mId__anousheh-picture"
+                            data-tab-name="anousheh"
+                            class="pictures__img"
+                            src="./assets/images/crew/anousheh/anousheh__desktop.png"
+                            alt="Anousheh Ansari" />
                     </div>
                 </div>
-            </div>
-        </section>
-        <script src="./js/min/destination.js"></script>
+            </section>
+        </div>
+        <script src="./js/min/crew.js"></script>
     </body>
 </html>

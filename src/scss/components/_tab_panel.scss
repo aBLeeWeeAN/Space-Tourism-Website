@@ -49,4 +49,47 @@
 
         column-gap: 96px;
     }
+
+    &__navigation {
+        // nothing
+    }
+
+    &--crew {
+        // justify-content: flex-end;
+        // align-items: flex-end;
+
+        padding: 0;
+        row-gap: 24px;
+
+        .tab-panel__tab {
+            display: none;
+
+            &.active {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                row-gap: 40px;
+
+                min-height: 631px;
+
+                // padding: 197px 0;
+            }
+        }
+
+        .tab-panel__header-group {
+            display: inline-flex;
+            flex-direction: column;
+
+            row-gap: 16px;
+        }
+
+        .tab-panel__title {
+            @include typography.tp-3;
+        }
+
+        .tab-panel__crew-role {
+            @include typography.tp-4--half-opacity;
+        }
+    }
 }

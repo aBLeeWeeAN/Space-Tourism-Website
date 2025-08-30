@@ -93,13 +93,18 @@ $extrablack: 950;
     text-transform: uppercase;
 }
 
+@mixin tp-4--half-opacity {
+    @include tp-4;
+    opacity: 50%;
+}
+
 @mixin tp-4--dark-blue {
     @include tp-4;
 
     color: colors.$color__blue-900;
 }
 
-@mixin tp-4--half-opacity {
+@mixin tp-4--dark-blue--half-opacity {
     @include tp-4;
 
     color: rgba($color: colors.$color__blue-900, $alpha: 0.5);

@@ -29,14 +29,16 @@
 //? --- components
 @use "components/site_navigation";
 @use "components/tab_panel_navigation";
+@use "components/tab_panel_pagination";
 
 @use "components/logo_btn";
 @use "components/explore_btn";
 
-@use "components/planets";
+@use "components/pictures";
 @use "components/tab_panel";
 @use "components/additional_info_block";
 
 //? --- SECTIONS
 @use "sections/homepage";
 @use "sections/destination";
+@use "sections/crew";

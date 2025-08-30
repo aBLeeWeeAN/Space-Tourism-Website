@@ -1,8 +1,8 @@
-.planets {
+.pictures {
     display: inline-block;
 
     max-width: 539px;
-    padding: 0 29.5px;
+    // padding: 0 29.5px;
 
     &__img {
         display: none;
@@ -10,6 +10,14 @@
         &.active {
             display: inline-block;
         }
+    }
+
+    &--destination {
+        padding: 127px 0;
+    }
+
+    &--crew {
+        // padding: 29px 0;
     }
 }
 

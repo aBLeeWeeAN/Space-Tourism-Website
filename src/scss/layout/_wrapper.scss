@@ -3,12 +3,16 @@
 .wrapper {
     margin: 0 auto;
 
-    max-width: 1440px;
+    // max-width: 1440px;
+    max-width: 1110px;
     height: auto;
 
-    padding: spacing.$spacing-1600 spacing.$spacing-2050;
+    // padding: spacing.$spacing-1600 spacing.$spacing-2050;
+    padding: spacing.$spacing-1600 0;
 
-    &--destination {
-        padding: spacing.$spacing-600 spacing.$spacing-2050;
+    &--destination,
+    &--crew {
+        // padding: spacing.$spacing-600 spacing.$spacing-2050;
+        padding: spacing.$spacing-600 0;
     }
 }

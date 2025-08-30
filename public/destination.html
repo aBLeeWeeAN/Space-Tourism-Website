@@ -8,7 +8,7 @@
     </head>
     <body class="body body--destination">
         <header class="header">
-            <a href="#!" class="logo-btn">
+            <a href="./index.html" class="logo-btn">
                 <img class="logo-btn__img" src="./assets/images/icons/logo.svg" alt="Logo icon" />
             </a>
             <nav class="site-navigation">
@@ -20,33 +20,33 @@
                 </ol>
             </nav>
         </header>
-        <section class="destination">
-            <div class="wrapper wrapper--destination">
+        <div class="wrapper wrapper--destination">
+            <section class="destination">
                 <h2 class="destination__title"><span>01</span>PICK YOUR DESTINATION</h2>
                 <div class="destination__content">
-                    <div class="planets">
+                    <div class="pictures pictures--destination">
                         <img
-                            id="planet-moon"
-                            data-planet-name="moon"
-                            class="planets__img active"
+                            id="mId__moon-picture"
+                            data-tab-name="moon"
+                            class="pictures__img active"
                             src="./assets/images/destination/moon/moon_desktop.png"
                             alt="Moon" />
                         <img
-                            id="planet-mars"
-                            data-planet-name="mars"
-                            class="planets__img"
+                            id="mId__mars-picture"
+                            data-tab-name="mars"
+                            class="pictures__img"
                             src="./assets/images/destination/mars/mars_desktop.png"
                             alt="Mars" />
                         <img
-                            id="planet-europa"
-                            data-planet-name="europa"
-                            class="planets__img"
+                            id="mId__europa-picture"
+                            data-tab-name="europa"
+                            class="pictures__img"
                             src="./assets/images/destination/europa/europa_desktop.png"
                             alt="Europa" />
                         <img
-                            id="planet-titan"
-                            data-planet-name="titan"
-                            class="planets__img"
+                            id="mId__titan-picture"
+                            data-tab-name="titan"
+                            class="pictures__img"
                             src="./assets/images/destination/titan/titan_desktop.png"
                             alt="Titan" />
                     </div>
@@ -55,9 +55,9 @@
                             <ul class="tab-panel-navigation__list">
                                 <li class="tab-panel-navigation__item">
                                     <button
-                                        id="moon-tab-button"
+                                        id="mId__moon-tab-button"
                                         role="tab"
-                                        data-planet-name="moon"
+                                        data-tab-name="moon"
                                         aria-selected="true"
                                         aria-controls="moon-tab"
                                         class="tab-panel-navigation__button active">
@@ -66,9 +66,9 @@
                                 </li>
                                 <li class="tab-panel-navigation__item">
                                     <button
-                                        id="mars-tab-button"
+                                        id="mId__mars-tab-button"
                                         role="tab"
-                                        data-planet-name="mars"
+                                        data-tab-name="mars"
                                         aria-selected="false"
                                         aria-controls="mars-tab"
                                         class="tab-panel-navigation__button">
@@ -77,9 +77,9 @@
                                 </li>
                                 <li class="tab-panel-navigation__item">
                                     <button
-                                        id="europa-tab-button"
+                                        id="mId__europa-tab-button"
                                         role="tab"
-                                        data-planet-name="europa"
+                                        data-tab-name="europa"
                                         aria-selected="false"
                                         aria-controls="europa-tab"
                                         class="tab-panel-navigation__button">
@@ -88,9 +88,9 @@
                                 </li>
                                 <li class="tab-panel-navigation__item">
                                     <button
-                                        id="titan-tab-button"
+                                        id="mId__titan-tab-button"
                                         role="tab"
-                                        data-planet-name="titan"
+                                        data-tab-name="titan"
                                         aria-selected="false"
                                         aria-controls="titan-tab"
                                         class="tab-panel-navigation__button">
@@ -100,7 +100,7 @@
                             </ul>
                         </nav>
 
-                        <div id="moon-tab" data-planet-name="moon" role="tabpanel" class="tab-panel__tab active">
+                        <div id="mId__moon-tab" data-tab-name="moon" role="tabpanel" class="tab-panel__tab active">
                             <div class="tab-panel__text-group">
                                 <h3 class="tab-panel__title">MOON</h3>
                                 <p class="tab-panel__text">
@@ -122,7 +122,7 @@
                             </div>
                         </div>
 
-                        <div id="mars-tab" data-planet-name="mars" role="tabpanel" class="tab-panel__tab">
+                        <div id="mId__mars-tab" data-tab-name="mars" role="tabpanel" class="tab-panel__tab">
                             <div class="tab-panel__text-group">
                                 <h3 class="tab-panel__title">MARS</h3>
                                 <p class="tab-panel__text">
@@ -143,7 +143,7 @@
                             </div>
                         </div>
 
-                        <div id="europa-tab" data-planet-name="europa" role="tabpanel" class="tab-panel__tab">
+                        <div id="mId__europa-tab" data-tab-name="europa" role="tabpanel" class="tab-panel__tab">
                             <div class="tab-panel__text-group">
                                 <h3 class="tab-panel__title">EUROPA</h3>
                                 <p class="tab-panel__text">
@@ -166,7 +166,7 @@
                             </div>
                         </div>
 
-                        <div id="titan-tab" data-planet-name="titan" role="tabpanel" class="tab-panel__tab">
+                        <div id="mId__titan-tab" data-tab-name="titan" role="tabpanel" class="tab-panel__tab">
                             <div class="tab-panel__text-group">
                                 <h3 class="tab-panel__title">TITAN</h3>
                                 <p class="tab-panel__text">
@@ -188,8 +188,8 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
         <script src="./js/min/destination.js"></script>
     </body>
 </html>
