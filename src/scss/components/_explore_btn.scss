@@ -56,7 +56,7 @@
     }
 
     &:hover {
-        @include typography.tp-4--half-opacity;
+        @include typography.tp-4--dark-blue--half-opacity;
 
         &::before {
             width: calc(272px + 88px * 2);

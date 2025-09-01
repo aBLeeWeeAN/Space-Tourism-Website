@@ -15,4 +15,25 @@
         // padding: spacing.$spacing-600 spacing.$spacing-2050;
         padding: spacing.$spacing-600 0;
     }
+
+    &--technology {
+        // position: relative;
+
+        max-width: 1275px;
+        padding: spacing.$spacing-600 0;
+
+        // /* Центрируем */
+        // left: 50%;
+        // transform: translateX(-50%);
+
+        /* Смещаем вправо на разницу ширины (1275 - 1110 = 165) / 2 = 82.5px */
+        // transform: translateX(calc(-50% + 82.5px));
+
+        // transform: translateX(82.5px);
+
+        transform: translateX(calc((1275px - 1110px) / 2));
+
+        // margin-left: auto;
+        // margin-right: calc(auto - 165px);
+    }
 }

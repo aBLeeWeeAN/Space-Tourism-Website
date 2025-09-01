@@ -1,0 +1,32 @@
+@use "../base/typography";
+
+.technology {
+    display: flex;
+    flex-direction: column;
+
+    row-gap: 24px;
+
+    &__title {
+        @include typography.tp-5--white;
+
+        span {
+            @include typography.tp-5--white-bold;
+            opacity: 25%;
+
+            margin-right: 24px;
+        }
+    }
+
+    &__content {
+        // max-height: 734px;
+
+        display: flex;
+        flex-direction: row;
+
+        justify-content: space-between;
+        align-items: center;
+
+        column-gap: 32px;
+        padding: 67px 0;
+    }
+}

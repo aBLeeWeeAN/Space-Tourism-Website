@@ -1,5 +1,5 @@
 @use "../base/colors";
-// @use "../base/typography";
+@use "../base/typography";
 
 .tab-panel-pagination {
     // display: inline-block;
@@ -10,9 +10,9 @@
         column-gap: 40px;
     }
 
-    &__item {
-        // display: inline-block;
-    }
+    // &__item {
+    //     // display: inline-block;
+    // }
 
     &__button {
         width: 15px;
@@ -37,6 +37,62 @@
 
         &.active {
             opacity: 100%;
+        }
+    }
+
+    &--technology {
+        .tab-panel-pagination__list {
+            display: inline-flex;
+            flex-direction: column;
+
+            row-gap: 32px;
+        }
+
+        // .tab-panel-pagination__item {
+        //     // display: inline-block;
+        // }
+
+        .tab-panel-pagination__button {
+            @include typography.tp-4;
+
+            display: inline-flex;
+
+            justify-content: center;
+            align-items: center;
+
+            width: 80px;
+            aspect-ratio: 1 / 1;
+
+            color: colors.$color__white;
+            background-color: transparent;
+
+            border: 1px solid rgba($color: colors.$color__white, $alpha: 0.25);
+            border-radius: 50%;
+
+            will-change: color, border-color, background-color;
+            transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+
+            opacity: 100%;
+
+            cursor: url("../../../public/assets/images/icons/pointer/pointer.svg") 3 0, auto;
+
+            &:hover {
+                border-color: colors.$color__white;
+            }
+
+            &:active {
+                border-color: colors.$color__white;
+                background-color: colors.$color__white;
+
+                color: colors.$color__blue-900;
+            }
+
+            &.active {
+                border-color: colors.$color__white;
+                background-color: colors.$color__white;
+
+                color: colors.$color__blue-900;
+            }
         }
     }
 
