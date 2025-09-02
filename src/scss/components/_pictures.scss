@@ -52,6 +52,17 @@
             max-width: 447px;
             // height: 676px;
         }
+
+        &--technology {
+            max-width: none;
+            height: 357px;
+
+            margin-left: -20px;
+            margin-right: -20px;
+
+            // max-width: max-content;
+            // aspect-ratio: 768 / 357;
+        }
     }
 }
 

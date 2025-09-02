@@ -30,3 +30,21 @@
         padding: 67px 0;
     }
 }
+
+//? --- TABLET ---
+//? --------------
+@media (min-width: 768px) and (max-width: 1439px) {
+    .technology {
+        &__title {
+            padding: 0 40px;
+        }
+
+        &__content {
+            flex-direction: column-reverse;
+            row-gap: 32px;
+
+            padding: 0;
+            padding-top: 64px;
+        }
+    }
+}

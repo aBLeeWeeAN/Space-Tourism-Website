@@ -49,5 +49,15 @@
         &--technology {
             padding: 40px 0;
         }
+
+        &--technology {
+            // max-width: none;
+            // width: 100%;
+
+            max-width: 768px;
+            transform: none;
+
+            // padding: 40px 40px;
+        }
     }
 }
