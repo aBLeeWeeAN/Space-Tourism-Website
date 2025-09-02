@@ -95,47 +95,75 @@
             }
         }
     }
+}
 
-    // &__button {
-    //     position: relative;
+//? --- TABLET ---
+//? --------------
+@media (min-width: 768px) and (max-width: 1439px) {
+    .tab-panel-pagination {
+        &__list {
+            column-gap: 16px;
+        }
 
-    //     width: calc(15px + 20px * 2);
-    //     aspect-ratio: 1 / 1;
+        &__button {
+            width: 10px;
+        }
 
-    //     background-color: transparent;
-    //     opacity: 17.44%;
+        // TODO: pagination tablet mode
+        // &--technology {
+        //     .tab-panel-pagination__list {
+        //         display: inline-flex;
+        //         flex-direction: column;
 
-    //     will-change: opacity;
-    //     transition: opacity 0.3s ease-in-out;
+        //         row-gap: 32px;
+        //     }
 
-    //     cursor: url("../../../public/assets/images/icons/pointer/pointer.svg") 3 0, auto;
+        //     // .tab-panel-pagination__item {
+        //     //     // display: inline-block;
+        //     // }
 
-    //     &::after {
-    //         position: absolute;
-    //         content: "";
+        //     .tab-panel-pagination__button {
+        //         @include typography.tp-4;
 
-    //         width: 15px;
-    //         height: 15px;
+        //         display: inline-flex;
 
-    //         border-radius: 50%;
-    //         background-color: colors.$color__white;
+        //         justify-content: center;
+        //         align-items: center;
 
-    //         top: 50%;
-    //         left: 50%;
+        //         width: 80px;
+        //         aspect-ratio: 1 / 1;
 
-    //         transform: translate(-50%, -50%);
-    //     }
+        //         color: colors.$color__white;
+        //         background-color: transparent;
 
-    //     &:hover {
-    //         opacity: 50%;
-    //     }
+        //         border: 1px solid rgba($color: colors.$color__white, $alpha: 0.25);
+        //         border-radius: 50%;
 
-    //     &:active {
-    //         opacity: 65%;
-    //     }
+        //         will-change: color, border-color, background-color;
+        //         transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 
-    //     &.active {
-    //         opacity: 100%;
-    //     }
-    // }
+        //         opacity: 100%;
+
+        //         cursor: url("../../../public/assets/images/icons/pointer/pointer.svg") 3 0, auto;
+
+        //         &:hover {
+        //             border-color: colors.$color__white;
+        //         }
+
+        //         &:active {
+        //             border-color: colors.$color__white;
+        //             background-color: colors.$color__white;
+
+        //             color: colors.$color__blue-900;
+        //         }
+
+        //         &.active {
+        //             border-color: colors.$color__white;
+        //             background-color: colors.$color__white;
+
+        //             color: colors.$color__blue-900;
+        //         }
+        //     }
+        // }
+    }
 }

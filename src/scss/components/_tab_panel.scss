@@ -146,5 +146,34 @@
             justify-content: space-around;
             column-gap: 24px;
         }
+
+        // &__header-group {
+        //     row-gap: 16px;
+        // }
+
+        &__surtitle {
+            text-align: center;
+        }
+
+        &--crew {
+            padding: 0;
+            padding-top: 40px;
+
+            row-gap: 24px;
+
+            .tab-panel__text {
+                height: 117px;
+            }
+
+            .tab-panel__tab {
+                // row-gap: 24px;
+                min-height: auto;
+                // justify-content: center;
+            }
+
+            // .tab-panel__title {
+            //     @include typography.tp-3;
+            // }
+        }
     }
 }
