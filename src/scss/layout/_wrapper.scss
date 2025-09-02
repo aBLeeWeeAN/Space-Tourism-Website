@@ -11,7 +11,8 @@
     padding: spacing.$spacing-1600 0;
 
     &--destination,
-    &--crew {
+    &--crew,
+    &--technology {
         // padding: spacing.$spacing-600 spacing.$spacing-2050;
         padding: spacing.$spacing-600 0;
     }
@@ -20,7 +21,6 @@
         // position: relative;
 
         max-width: 1275px;
-        padding: spacing.$spacing-600 0;
 
         // /* Центрируем */
         // left: 50%;
@@ -43,5 +43,11 @@
 @media (min-width: 768px) and (max-width: 1439px) {
     .wrapper {
         max-width: 688px;
+
+        &--destination,
+        &--crew,
+        &--technology {
+            padding: 40px 0;
+        }
     }
 }

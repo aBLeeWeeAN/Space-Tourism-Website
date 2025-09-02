@@ -51,6 +51,12 @@ $extrablack: 950;
     color: colors.$color__white;
 
     text-transform: uppercase;
+
+    //? --- TABLET ---
+    //? --------------
+    @media (min-width: 768px) and (max-width: 1439px) {
+        font-size: 80px;
+    }
 }
 
 //? --- Text preset 3
@@ -71,6 +77,12 @@ $extrablack: 950;
     color: colors.$color__white;
 
     text-transform: uppercase;
+
+    //? --- TABLET ---
+    //? --------------
+    @media (min-width: 768px) and (max-width: 1439px) {
+        font-size: 40px;
+    }
 }
 
 //? --- Text preset 4
@@ -91,6 +103,12 @@ $extrablack: 950;
     color: colors.$color__white;
 
     text-transform: uppercase;
+
+    //? --- TABLET ---
+    //? --------------
+    @media (min-width: 768px) and (max-width: 1439px) {
+        font-size: 24px;
+    }
 }
 
 @mixin tp-4--half-opacity {
@@ -128,6 +146,13 @@ $extrablack: 950;
     color: colors.$color__blue-300;
 
     text-transform: uppercase;
+
+    //? --- TABLET ---
+    //? --------------
+    @media (min-width: 768px) and (max-width: 1439px) {
+        font-size: 20px;
+        letter-spacing: 15%;
+    }
 }
 
 @mixin tp-5--white {
@@ -237,6 +262,12 @@ $extrablack: 950;
     color: colors.$color__white;
 
     text-transform: none;
+
+    //? --- TABLET ---
+    //? --------------
+    @media (min-width: 768px) and (max-width: 1439px) {
+        font-size: 16px;
+    }
 }
 
 @mixin tp-9--blue {
