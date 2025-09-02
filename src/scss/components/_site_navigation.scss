@@ -94,3 +94,21 @@
         }
     }
 }
+
+//? --- TABLET ---
+//? --------------
+@media (min-width: 768px) and (max-width: 1439px) {
+    .site-navigation {
+        padding: 0 40px 0 117px;
+
+        &__list {
+            column-gap: 40px;
+        }
+
+        &__link {
+            &::before {
+                display: none;
+            }
+        }
+    }
+}

@@ -37,3 +37,11 @@
         // margin-right: calc(auto - 165px);
     }
 }
+
+//? --- TABLET ---
+//? --------------
+@media (min-width: 768px) and (max-width: 1439px) {
+    .wrapper {
+        max-width: 688px;
+    }
+}

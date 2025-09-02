@@ -12,3 +12,11 @@
     justify-content: space-between;
     align-items: center;
 }
+
+//? --- TABLET ---
+//? --------------
+@media (min-width: 768px) and (max-width: 1439px) {
+    .header {
+        padding-top: 0;
+    }
+}
