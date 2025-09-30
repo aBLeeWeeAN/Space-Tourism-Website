@@ -66,6 +66,34 @@
     }
 }
 
+//? --- MOBILE ---
+//? --------------
+@media (max-width: 767px) {
+    .pictures {
+        max-width: 150px;
+
+        &--destination {
+            padding: 26.5px 0;
+        }
+
+        &--crew {
+            max-width: 447px;
+            // height: 676px;
+        }
+
+        &--technology {
+            max-width: none;
+            height: 357px;
+
+            margin-left: -20px;
+            margin-right: -20px;
+
+            // max-width: max-content;
+            // aspect-ratio: 768 / 357;
+        }
+    }
+}
+
 //? TODO: Мы ж хотим красиво :)
 // .planets {
 //     position: relative;

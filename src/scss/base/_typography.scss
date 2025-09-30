@@ -137,19 +137,19 @@ $extrablack: 950;
 
 @mixin tp-4--half-opacity {
     @include tp-4;
-    opacity: 50%;
+    opacity: 50% !important;
 }
 
 @mixin tp-4--dark-blue {
     @include tp-4;
 
-    color: colors.$color__blue-900;
+    color: colors.$color__blue-900 !important;
 }
 
 @mixin tp-4--dark-blue--half-opacity {
     @include tp-4;
 
-    color: rgba($color: colors.$color__blue-900, $alpha: 0.5);
+    color: rgba($color: colors.$color__blue-900, $alpha: 0.5) !important;
 }
 
 //? --- Text preset 5
@@ -181,16 +181,16 @@ $extrablack: 950;
 
 @mixin tp-5--white {
     @include tp-5;
-    color: colors.$color__white;
+    color: colors.$color__white !important;
 }
 
 @mixin tp-5--white-bold {
     @include tp-5;
 
-    color: colors.$color__white;
-    font-weight: $bold;
+    color: colors.$color__white !important;
+    font-weight: $bold !important;
 
-    letter-spacing: 4.72px;
+    letter-spacing: 4.72px !important;
 }
 
 //? --- Text preset 6
@@ -224,6 +224,11 @@ $extrablack: 950;
     }
 }
 
+@mixin tp-6--bold {
+    @include tp-6;
+    font-weight: $bold !important;
+}
+
 //? --- Text preset 7
 //? -----------------
 
@@ -246,7 +251,7 @@ $extrablack: 950;
 
 @mixin tp-7--blue {
     @include tp-7;
-    color: colors.$color__blue-300;
+    color: colors.$color__blue-300 !important;
 }
 
 //? --- Text preset 8
@@ -278,14 +283,14 @@ $extrablack: 950;
 
 @mixin tp-8--blue {
     @include tp-8;
-    color: colors.$color__blue-300;
+    color: colors.$color__blue-300 !important;
 }
 
 @mixin tp-8--bold {
     @include tp-8;
 
-    font-weight: $bold;
-    letter-spacing: 2.7px;
+    font-weight: $bold !important;
+    letter-spacing: 2.7px !important;
 }
 
 //? --- Text preset 9
@@ -320,5 +325,5 @@ $extrablack: 950;
 
 @mixin tp-9--blue {
     @include tp-9;
-    color: colors.$color__blue-300;
+    color: colors.$color__blue-300 !important;
 }

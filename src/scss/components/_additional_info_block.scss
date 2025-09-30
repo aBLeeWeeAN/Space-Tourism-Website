@@ -22,3 +22,26 @@
         align-items: center;
     }
 }
+
+//? --- MOBILE ---
+//? --------------
+@media (max-width: 767px) {
+    .additional-info-block {
+        align-items: center;
+
+        &__title {
+            @include typography.tp-7--blue;
+        }
+
+        &__text {
+            @include typography.tp-6;
+
+            font-family: "Bellefair", serif !important;
+            font-weight: typography.$regular !important;
+            font-style: normal !important;
+
+            letter-spacing: 0 !important;
+            font-size: 28px !important;
+        }
+    }
+}
