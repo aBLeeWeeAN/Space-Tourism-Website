@@ -1,12 +1,12 @@
 @use "../base/colors";
 @use "../utilities/spacing";
 
-.close-menu-button {
-    &__input {
-        display: none;
-    }
+.close-menu-btn {
+    // &__input {
+    //     display: none;
+    // }
 
-    &__label {
+    &__img {
         display: block;
 
         width: 24px;
