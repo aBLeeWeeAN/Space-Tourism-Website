@@ -20,3 +20,11 @@
         padding-top: 0;
     }
 }
+
+//? --- MOBILE ---
+//? --------------
+@media (max-width: 767px) {
+    .header {
+        padding: 24px 0;
+    }
+}

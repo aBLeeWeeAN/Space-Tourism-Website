@@ -1,0 +1,30 @@
+@use "../base/colors";
+@use "../utilities/spacing";
+
+.menu-button {
+    display: none;
+    padding-right: 24px;
+
+    &__input {
+        display: none;
+    }
+
+    &__label {
+        display: block;
+
+        width: 24px;
+        height: auto;
+
+        aspect-ratio: 24 / 21;
+
+        line-height: 0;
+    }
+}
+
+//? --- MOBILE ---
+//? --------------
+@media (max-width: 767px) {
+    .menu-button {
+        display: block;
+    }
+}

@@ -46,3 +46,15 @@
         }
     }
 }
+
+//? ---  MOBILE ---
+//? --------------
+@media (max-width: 767px) {
+    .logo-btn {
+        padding-left: 24px;
+
+        &::after {
+            display: none;
+        }
+    }
+}

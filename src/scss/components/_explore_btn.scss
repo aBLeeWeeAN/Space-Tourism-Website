@@ -64,3 +64,21 @@
         }
     }
 }
+
+//? --- MOBILE ---
+//? --------------
+@media (max-width: 767px) {
+    .explore-btn {
+        width: 144px;
+
+        &::before {
+            width: 144px;
+        }
+
+        &:hover {
+            &::before {
+                width: calc(144px + 88px * 2);
+            }
+        }
+    }
+}

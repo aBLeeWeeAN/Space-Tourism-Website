@@ -61,3 +61,28 @@
         }
     }
 }
+
+//? --- MOBILE ---
+//? --------------
+@media (max-width: 767px) {
+    .wrapper {
+        max-width: 327px;
+        padding: 24px 0;
+
+        &--destination,
+        &--crew,
+        &--technology {
+            padding: 24px 0;
+        }
+
+        &--technology {
+            // max-width: none;
+            // width: 100%;
+
+            max-width: 375px;
+            transform: none;
+
+            // padding: 40px 40px;
+        }
+    }
+}

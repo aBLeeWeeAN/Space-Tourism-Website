@@ -1,0 +1,19 @@
+@use "../base/colors";
+@use "../utilities/spacing";
+
+.close-menu-button {
+    &__input {
+        display: none;
+    }
+
+    &__label {
+        display: block;
+
+        width: 24px;
+        height: auto;
+
+        aspect-ratio: 24 / 21;
+
+        line-height: 0;
+    }
+}
