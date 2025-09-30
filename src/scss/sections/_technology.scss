@@ -48,3 +48,30 @@
         }
     }
 }
+
+//? --- MOBILE ---
+//? --------------
+@media (max-width: 767px) {
+    .technology {
+        &__title {
+            @include typography.tp-6;
+            text-align: center;
+            // padding: 0 40px;
+
+            span {
+                @include typography.tp-6--bold;
+                opacity: 25%;
+
+                margin-right: 24px;
+            }
+        }
+
+        &__content {
+            flex-direction: column-reverse;
+            row-gap: 32px;
+
+            padding: 0;
+            padding-top: 64px;
+        }
+    }
+}

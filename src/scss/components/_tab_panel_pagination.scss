@@ -138,19 +138,19 @@
             width: 10px;
         }
 
-        // &--technology {
-        //     .tab-panel-pagination__list {
-        //         flex-direction: row;
-        //         column-gap: 16px;
-        //     }
+        &--technology {
+            .tab-panel-pagination__list {
+                flex-direction: row;
+                column-gap: 16px;
+            }
 
-        //     // .tab-panel-pagination__item {
-        //     //     // display: inline-block;
-        //     // }
+            // .tab-panel-pagination__item {
+            //     // display: inline-block;
+            // }
 
-        //     .tab-panel-pagination__button {
-        //         width: 56px;
-        //     }
-        // }
+            .tab-panel-pagination__button {
+                width: 40px;
+            }
+        }
     }
 }

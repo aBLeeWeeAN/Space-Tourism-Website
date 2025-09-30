@@ -253,21 +253,21 @@
             }
         }
 
-        // &--technology {
-        //     max-width: 512px;
-        //     flex-direction: column;
+        &--technology {
+            max-width: 327px;
+            flex-direction: column;
 
-        //     row-gap: 40px;
-        //     padding: 0;
+            row-gap: 40px;
+            padding: 0;
 
-        //     .tab-panel__tab {
-        //         row-gap: 16px;
-        //         // height: 146px;
-        //     }
+            .tab-panel__tab {
+                row-gap: 16px;
+                // height: 146px;
+            }
 
-        //     .tab-panel__text {
-        //         height: 146px;
-        //     }
-        // }
+            .tab-panel__text {
+                height: 162px;
+            }
+        }
     }
 }
