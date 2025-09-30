@@ -41,3 +41,26 @@
         }
     }
 }
+
+//? --- MOBILE ---
+//? --------------
+@media (max-width: 767px) {
+    .crew {
+        &__title {
+            @include typography.tp-6;
+            text-align: center;
+
+            span {
+                @include typography.tp-6--bold;
+                opacity: 25%;
+
+                margin-right: 24px;
+            }
+        }
+
+        &__content {
+            flex-direction: column;
+            row-gap: 32px;
+        }
+    }
+}

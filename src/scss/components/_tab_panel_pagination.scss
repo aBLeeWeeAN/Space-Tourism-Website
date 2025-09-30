@@ -125,3 +125,32 @@
         }
     }
 }
+
+//? --- MOBILE ---
+//? --------------
+@media (max-width: 767px) {
+    .tab-panel-pagination {
+        &__list {
+            column-gap: 16px;
+        }
+
+        &__button {
+            width: 10px;
+        }
+
+        // &--technology {
+        //     .tab-panel-pagination__list {
+        //         flex-direction: row;
+        //         column-gap: 16px;
+        //     }
+
+        //     // .tab-panel-pagination__item {
+        //     //     // display: inline-block;
+        //     // }
+
+        //     .tab-panel-pagination__button {
+        //         width: 56px;
+        //     }
+        // }
+    }
+}
