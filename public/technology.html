@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Space Tourism Website - Destination</title>
+        <link rel="stylesheet" href="./css/min/main.css" />
+    </head>
+    <body class="body body--technology">
+        <header class="header">
+            <a href="./index.html" class="logo-btn">
+                <img class="logo-btn__img" src="./assets/images/icons/logo.svg" alt="Logo icon" />
+            </a>
+            <nav class="site-navigation" id="site-navigation">
+                <div class="site-navigation__close-menu-btn">
+                    <a href="#" class="close-menu-btn">
+                        <img class="close-menu-btn__img" src="./assets/images/icons/menu_close.svg" alt="Menu close button" />
+                    </a>
+                </div>
+                <ol class="site-navigation__list">
+                    <li class="site-navigation__item"><a href="./index.html" class="site-navigation__link">Home</a></li>
+                    <li class="site-navigation__item"><a href="./destination.html" class="site-navigation__link">Destination</a></li>
+                    <li class="site-navigation__item"><a href="./crew.html" class="site-navigation__link">Crew</a></li>
+                    <li class="site-navigation__item"><a href="#!" class="site-navigation__link active">Technology</a></li>
+                </ol>
+            </nav>
+            <a href="#site-navigation" class="menu-btn">
+                <img class="menu-btn__img" src="./assets/images/icons/menu.svg" alt="Hamburger menu button" />
+            </a>
+        </header>
+        <div class="wrapper wrapper--technology">
+            <section class="technology">
+                <h2 class="technology__title"><span>03</span>SPACE LAUNCH 101</h2>
+                <div class="technology__content">
+                    <div class="tab-panel tab-panel--technology">
+                        <nav class="tab-panel__pagination tab-panel-pagination tab-panel-pagination--technology">
+                            <ul class="tab-panel-pagination__list">
+                                <li class="tab-panel-pagination__item">
+                                    <button
+                                        id="mId__launch-vehicle-tab-button"
+                                        role="tab"
+                                        data-tab-name="launch-vehicle"
+                                        aria-selected="true"
+                                        aria-controls="launch-vehicle-tab"
+                                        class="tab-panel-pagination__button active">
+                                        0
+                                    </button>
+                                </li>
+                                <li class="tab-panel-pagination__item">
+                                    <button
+                                        id="mId__spaceport-tab-button"
+                                        role="tab"
+                                        data-tab-name="spaceport"
+                                        aria-selected="false"
+                                        aria-controls="spaceport-tab"
+                                        class="tab-panel-pagination__button">
+                                        1
+                                    </button>
+                                </li>
+                                <li class="tab-panel-pagination__item">
+                                    <button
+                                        id="mId__space-capsule-tab-button"
+                                        role="tab"
+                                        data-tab-name="space-capsule"
+                                        aria-selected="false"
+                                        aria-controls="space-capsule-tab"
+                                        class="tab-panel-pagination__button">
+                                        2
+                                    </button>
+                                </li>
+                            </ul>
+                        </nav>
+
+                        <div id="mId__launch-vehicle-tab" data-tab-name="launch-vehicle" role="tabpanel" class="tab-panel__tab active">
+                            <div class="tab-panel__header-group">
+                                <h4 class="tab-panel__surtitle">THE TERMINOLOGY…</h4>
+                                <h3 class="tab-panel__title">LAUNCH VEHICLE</h3>
+                            </div>
+
+                            <p class="tab-panel__text">
+                                A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's
+                                surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in
+                                operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!
+                            </p>
+                        </div>
+
+                        <div id="mId__spaceport-tab" data-tab-name="spaceport" role="tabpanel" class="tab-panel__tab">
+                            <div class="tab-panel__header-group">
+                                <h4 class="tab-panel__surtitle">THE TERMINOLOGY…</h4>
+                                <h3 class="tab-panel__title">SPACEPORT</h3>
+                            </div>
+
+                            <p class="tab-panel__text">
+                                A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, by analogy to the seaport for
+                                ships or airport for aircraft. Based in the famous Cape Canaveral, our spaceport is ideally situated to take
+                                advantage of the Earth’s rotation for launch.
+                            </p>
+                        </div>
+
+                        <div id="mId__space-capsule-tab" data-tab-name="space-capsule" role="tabpanel" class="tab-panel__tab">
+                            <div class="tab-panel__header-group">
+                                <h4 class="tab-panel__surtitle">THE TERMINOLOGY…</h4>
+                                <h3 class="tab-panel__title">SPACE CAPSULE</h3>
+                            </div>
+
+                            <p class="tab-panel__text">
+                                A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to reenter the Earth's
+                                atmosphere without wings. Our capsule is where you'll spend your time during the flight. It includes a space
+                                gym, cinema, and plenty of other activities to keep you entertained.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="pictures pictures--technology">
+                        <img
+                            id="mId__launch-vehicle-picture"
+                            data-tab-name="launch-vehicle"
+                            class="pictures__img active"
+                            src="./assets/images/technology/launch_vehicle/launch_vehicle__desktop.png"
+                            alt="Launch Vehicle" />
+                        <img
+                            id="mId__spaceport-picture"
+                            data-tab-name="spaceport"
+                            class="pictures__img"
+                            src="./assets/images/technology/spaceport/spaceport__desktop_tablet.png"
+                            alt="Spaceport" />
+                        <img
+                            id="mId__space-capsule-picture"
+                            data-tab-name="space-capsule"
+                            class="pictures__img"
+                            src="./assets/images/technology/space_capsule/space_capsule__desktop.png"
+                            alt="Space Capsule" />
+                    </div>
+                </div>
+            </section>
+        </div>
+        <script src="./js/min/technology__tab_switcher.js"></script>
+    </body>
+</html>

@@ -1,4 +1,6 @@
 .body {
+    // position: relative;
+
     overflow-x: hidden;
     overflow-y: auto;
     // scroll-behavior: smooth;
@@ -6,21 +8,87 @@
     width: 100%;
     min-height: 100vh;
 
-    background-image: url("../../../public/assets/images/background/homepage_background.jpg");
+    background-image: url("../../../public/assets/images/background/homepage/homepage_background__desktop.jpg");
 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 
+    // &::before {
+    //     position: absolute;
+    //     content: "";
+
+    //     background-image: url("../../../public/assets/images/background/homepage_background.jpg");
+
+    //     background-position: center;
+    //     background-repeat: no-repeat;
+    //     background-size: cover;
+    //     background-size: 150% 150%;
+
+    //     top: 50%;
+    //     left: 50%;
+
+    //     width: 150%;
+    //     height: 150%;
+
+    //     z-index: -1;
+
+    //     transform-origin: center;
+    //     // transform: rotate(0);
+    //     transform: rotate(0deg) translate(-50%, -50%);
+    // }
+
     &--destination {
-        background-image: url("../../../public/assets/images/background/destination_background.jpg");
+        background-image: url("../../../public/assets/images/background/destination/destination_background__desktop.jpg");
     }
 
     &--crew {
-        background-image: url("../../../public/assets/images/background/crew_background.jpg");
+        background-image: url("../../../public/assets/images/background/crew/crew_background__desktop.jpg");
     }
 
     &--technology {
-        background-image: url("../../../public/assets/images/background/technology_background.jpg");
+        background-image: url("../../../public/assets/images/background/technology/technology_background__desktop.jpg");
+    }
+}
+
+//? --- TABLET ---
+//? --------------
+@media (min-width: 768px) and (max-width: 1439px) {
+    .body {
+        background-image: url("../../../public/assets/images/background/homepage/homepage_background__tablet.jpg");
+
+        &--destination {
+            background-image: url("../../../public/assets/images/background/destination/destination_background__tablet.jpg");
+        }
+
+        &--crew {
+            background-image: url("../../../public/assets/images/background/crew/crew_background__tablet.jpg");
+        }
+
+        &--technology {
+            background-image: url("../../../public/assets/images/background/technology/technology_background__tablet.jpg");
+        }
+    }
+}
+
+//? --- MOBILE ---
+//? --------------
+@media (max-width: 767px) {
+    .body {
+        // min-width: 327px;
+
+        background-image: url("../../../public/assets/images/background/homepage/homepage_background__mobile.jpg");
+
+        &--destination {
+            background-image: url("../../../public/assets/images/background/destination/destination_background__mobile.jpg");
+        }
+
+        &--crew {
+            background-image: url("../../../public/assets/images/background/crew/crew_background__mobile.jpg");
+        }
+
+        &--technology {
+            background-image: url("../../../public/assets/images/background/technology/technology_background__mobile.jpg");
+        }
     }
 }

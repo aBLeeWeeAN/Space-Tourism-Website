@@ -11,14 +11,22 @@
             <a href="#!" class="logo-btn">
                 <img class="logo-btn__img" src="./assets/images/icons/logo.svg" alt="Logo icon" />
             </a>
-            <nav class="site-navigation">
+            <nav class="site-navigation" id="site-navigation">
+                <div class="site-navigation__close-menu-btn">
+                    <a href="#" class="close-menu-btn">
+                        <img class="close-menu-btn__img" src="./assets/images/icons/menu_close.svg" alt="Menu close button" />
+                    </a>
+                </div>
                 <ol class="site-navigation__list">
                     <li class="site-navigation__item"><a href="#!" class="site-navigation__link active">Home</a></li>
                     <li class="site-navigation__item"><a href="./destination.html" class="site-navigation__link">Destination</a></li>
-                    <li class="site-navigation__item"><a href="#!" class="site-navigation__link">Crew</a></li>
-                    <li class="site-navigation__item"><a href="#!" class="site-navigation__link">Technology</a></li>
+                    <li class="site-navigation__item"><a href="./crew.html" class="site-navigation__link">Crew</a></li>
+                    <li class="site-navigation__item"><a href="./technology.html" class="site-navigation__link">Technology</a></li>
                 </ol>
             </nav>
+            <a href="#site-navigation" class="menu-btn">
+                <img class="menu-btn__img" src="./assets/images/icons/menu.svg" alt="Hamburger menu button" />
+            </a>
         </header>
         <section class="homepage">
             <div class="wrapper">
@@ -37,6 +45,6 @@
                 </div>
             </div>
         </section>
-        <script src="./js/min/main.js"></script>
+        <!-- <script src="./js/min/main.js"></script> -->
     </body>
 </html>

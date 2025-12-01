@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Space Tourism Website - Destination</title>
+        <link rel="stylesheet" href="./css/min/main.css" />
+    </head>
+    <body class="body body--crew">
+        <header class="header">
+            <a href="./index.html" class="logo-btn">
+                <img class="logo-btn__img" src="./assets/images/icons/logo.svg" alt="Logo icon" />
+            </a>
+            <nav class="site-navigation" id="site-navigation">
+                <div class="site-navigation__close-menu-btn">
+                    <a href="#" class="close-menu-btn">
+                        <img class="close-menu-btn__img" src="./assets/images/icons/menu_close.svg" alt="Menu close button" />
+                    </a>
+                </div>
+                <ol class="site-navigation__list">
+                    <li class="site-navigation__item"><a href="./index.html" class="site-navigation__link">Home</a></li>
+                    <li class="site-navigation__item"><a href="./destination.html" class="site-navigation__link">Destination</a></li>
+                    <li class="site-navigation__item"><a href="#!" class="site-navigation__link active">Crew</a></li>
+                    <li class="site-navigation__item"><a href="./technology.html" class="site-navigation__link">Technology</a></li>
+                </ol>
+            </nav>
+            <a href="#site-navigation" class="menu-btn">
+                <img class="menu-btn__img" src="./assets/images/icons/menu.svg" alt="Hamburger menu button" />
+            </a>
+        </header>
+        <div class="wrapper wrapper--crew">
+            <section class="crew">
+                <h2 class="crew__title"><span>02</span>MEET YOUR CREW</h2>
+                <div class="crew__content">
+                    <div class="tab-panel tab-panel--crew">
+                        <div id="mId__douglas-tab" data-tab-name="douglas" role="tabpanel" class="tab-panel__tab active">
+                            <div class="tab-panel__header-group">
+                                <h4 class="tab-panel__surtitle">Commander</h4>
+                                <h3 class="tab-panel__title">Douglas Hurley</h3>
+                            </div>
+                            <p class="tab-panel__text">
+                                Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He
+                                launched into space for the third time as commander of Crew Dragon Demo-2.
+                            </p>
+                        </div>
+
+                        <div id="mId__mark-tab" data-tab-name="mark" role="tabpanel" class="tab-panel__tab">
+                            <div class="tab-panel__header-group">
+                                <h4 class="tab-panel__surtitle">Mission Specialist</h4>
+                                <h3 class="tab-panel__title">MARK SHUTTLEWORTH</h3>
+                            </div>
+
+                            <p class="tab-panel__text">
+                                Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind the Linux-based Ubuntu
+                                operating system. Shuttleworth became the first South African to travel to space as a space tourist.
+                            </p>
+                        </div>
+
+                        <div id="mId__victor-tab" data-tab-name="victor" role="tabpanel" class="tab-panel__tab">
+                            <div class="tab-panel__header-group">
+                                <h4 class="tab-panel__surtitle">PILOT</h4>
+                                <h3 class="tab-panel__title">Victor Glover</h3>
+                            </div>
+
+                            <p class="tab-panel__text">
+                                Pilot on the first operational flight of the SpaceX Crew Dragon to the International Space Station. Glover
+                                is a commander in the U.S. Navy where he pilots an F/A-18.He was a crew member of Expedition 64, and served
+                                as a station systems flight engineer.
+                            </p>
+                        </div>
+
+                        <div id="mId__anousheh-tab" data-tab-name="anousheh" role="tabpanel" class="tab-panel__tab">
+                            <div class="tab-panel__header-group">
+                                <h4 class="tab-panel__surtitle">Flight Engineer</h4>
+                                <h3 class="tab-panel__title">Anousheh Ansari</h3>
+                            </div>
+
+                            <p class="tab-panel__text">
+                                Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. Ansari was the fourth
+                                self-funded space tourist, the first self-funded woman to fly to the ISS, and the first Iranian in space.
+                            </p>
+                        </div>
+
+                        <nav class="tab-panel__pagination tab-panel-pagination">
+                            <ul class="tab-panel-pagination__list">
+                                <li class="tab-panel-pagination__item">
+                                    <button
+                                        id="mId__douglas-tab-button"
+                                        role="tab"
+                                        data-tab-name="douglas"
+                                        aria-selected="true"
+                                        aria-controls="douglas-tab"
+                                        class="tab-panel-pagination__button active"></button>
+                                </li>
+                                <li class="tab-panel-pagination__item">
+                                    <button
+                                        id="mId__mark-tab-button"
+                                        role="tab"
+                                        data-tab-name="mark"
+                                        aria-selected="false"
+                                        aria-controls="mark-tab"
+                                        class="tab-panel-pagination__button"></button>
+                                </li>
+                                <li class="tab-panel-pagination__item">
+                                    <button
+                                        id="mId__victor-tab-button"
+                                        role="tab"
+                                        data-tab-name="victor"
+                                        aria-selected="false"
+                                        aria-controls="victor-tab"
+                                        class="tab-panel-pagination__button"></button>
+                                </li>
+                                <li class="tab-panel-pagination__item">
+                                    <button
+                                        id="mId__anousheh-tab-button"
+                                        role="tab"
+                                        data-tab-name="anousheh"
+                                        aria-selected="false"
+                                        aria-controls="anousheh-tab"
+                                        class="tab-panel-pagination__button"></button>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="pictures pictures--crew">
+                        <img
+                            id="mId__douglas-picture"
+                            data-tab-name="douglas"
+                            class="pictures__img active"
+                            src="./assets/images/crew/douglas/douglas__desktop.png"
+                            alt="Douglas Hurley" />
+                        <img
+                            id="mId__mark-picture"
+                            data-tab-name="mark"
+                            class="pictures__img"
+                            src="./assets/images/crew/mark/mark__desktop.png"
+                            alt="Mark Shuttleworth" />
+                        <img
+                            id="mId__victor-picture"
+                            data-tab-name="victor"
+                            class="pictures__img"
+                            src="./assets/images/crew/victor/victor__desktop.png"
+                            alt="Victor Glover" />
+                        <img
+                            id="mId__anousheh-picture"
+                            data-tab-name="anousheh"
+                            class="pictures__img"
+                            src="./assets/images/crew/anousheh/anousheh__desktop.png"
+                            alt="Anousheh Ansari" />
+                    </div>
+                </div>
+            </section>
+        </div>
+        <script src="./js/min/crew__tab_switcher.js"></script>
+    </body>
+</html>

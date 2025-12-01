@@ -31,6 +31,12 @@ $extrablack: 950;
     color: colors.$color__white;
 
     text-transform: uppercase;
+
+    //? --- MOBILE ---
+    //? --------------
+    @media (max-width: 767px) {
+        font-size: 80px;
+    }
 }
 
 //? --- Text preset 2
@@ -51,6 +57,18 @@ $extrablack: 950;
     color: colors.$color__white;
 
     text-transform: uppercase;
+
+    //? --- TABLET ---
+    //? --------------
+    @media (min-width: 768px) and (max-width: 1439px) {
+        font-size: 80px;
+    }
+
+    //? --- MOBILE ---
+    //? --------------
+    @media (max-width: 767px) {
+        font-size: 56px;
+    }
 }
 
 //? --- Text preset 3
@@ -71,6 +89,18 @@ $extrablack: 950;
     color: colors.$color__white;
 
     text-transform: uppercase;
+
+    //? --- TABLET ---
+    //? --------------
+    @media (min-width: 768px) and (max-width: 1439px) {
+        font-size: 40px;
+    }
+
+    //? --- MOBILE ---
+    //? --------------
+    @media (max-width: 767px) {
+        font-size: 24px;
+    }
 }
 
 //? --- Text preset 4
@@ -91,18 +121,35 @@ $extrablack: 950;
     color: colors.$color__white;
 
     text-transform: uppercase;
+
+    //? --- TABLET ---
+    //? --------------
+    @media (min-width: 768px) and (max-width: 1439px) {
+        font-size: 24px;
+    }
+
+    //? --- MOBILE ---
+    //? --------------
+    @media (max-width: 767px) {
+        font-size: 18px;
+    }
+}
+
+@mixin tp-4--half-opacity {
+    @include tp-4;
+    opacity: 50% !important;
 }
 
 @mixin tp-4--dark-blue {
     @include tp-4;
 
-    color: colors.$color__blue-900;
+    color: colors.$color__blue-900 !important;
 }
 
-@mixin tp-4--half-opacity {
+@mixin tp-4--dark-blue--half-opacity {
     @include tp-4;
 
-    color: rgba($color: colors.$color__blue-900, $alpha: 0.5);
+    color: rgba($color: colors.$color__blue-900, $alpha: 0.5) !important;
 }
 
 //? --- Text preset 5
@@ -123,20 +170,27 @@ $extrablack: 950;
     color: colors.$color__blue-300;
 
     text-transform: uppercase;
+
+    //? --- TABLET ---
+    //? --------------
+    @media (min-width: 768px) and (max-width: 1439px) {
+        font-size: 20px;
+        letter-spacing: 15%;
+    }
 }
 
 @mixin tp-5--white {
     @include tp-5;
-    color: colors.$color__white;
+    color: colors.$color__white !important;
 }
 
 @mixin tp-5--white-bold {
     @include tp-5;
 
-    color: colors.$color__white;
-    font-weight: $bold;
+    color: colors.$color__white !important;
+    font-weight: $bold !important;
 
-    letter-spacing: 4.72px;
+    letter-spacing: 4.72px !important;
 }
 
 //? --- Text preset 6
@@ -157,6 +211,22 @@ $extrablack: 950;
     color: colors.$color__white;
 
     text-transform: uppercase;
+
+    //? --- MOBILE ---
+    //? --------------
+    @media (max-width: 767px) {
+        font-family: "Barlow Condensed", sans-serif;
+        font-weight: $regular;
+        font-style: normal;
+
+        letter-spacing: 0.15em;
+        font-size: 16px;
+    }
+}
+
+@mixin tp-6--bold {
+    @include tp-6;
+    font-weight: $bold !important;
 }
 
 //? --- Text preset 7
@@ -181,7 +251,7 @@ $extrablack: 950;
 
 @mixin tp-7--blue {
     @include tp-7;
-    color: colors.$color__blue-300;
+    color: colors.$color__blue-300 !important;
 }
 
 //? --- Text preset 8
@@ -202,18 +272,25 @@ $extrablack: 950;
     color: colors.$color__white;
 
     text-transform: uppercase;
+
+    //? --- MOBILE ---
+    //? --------------
+    @media (max-width: 767px) {
+        font-size: 14px;
+        letter-spacing: 0.15em;
+    }
 }
 
 @mixin tp-8--blue {
     @include tp-8;
-    color: colors.$color__blue-300;
+    color: colors.$color__blue-300 !important;
 }
 
 @mixin tp-8--bold {
     @include tp-8;
 
-    font-weight: $bold;
-    letter-spacing: 2.7px;
+    font-weight: $bold !important;
+    letter-spacing: 2.7px !important;
 }
 
 //? --- Text preset 9
@@ -232,9 +309,21 @@ $extrablack: 950;
     color: colors.$color__white;
 
     text-transform: none;
+
+    //? --- TABLET ---
+    //? --------------
+    @media (min-width: 768px) and (max-width: 1439px) {
+        font-size: 16px;
+    }
+
+    //? --- MOBILE ---
+    //? --------------
+    @media (max-width: 767px) {
+        font-size: 15px;
+    }
 }
 
 @mixin tp-9--blue {
     @include tp-9;
-    color: colors.$color__blue-300;
+    color: colors.$color__blue-300 !important;
 }

@@ -1,0 +1,84 @@
+@use "../base/colors";
+@use "../base/typography";
+
+.explore-btn {
+    @include typography.tp-4--dark-blue;
+
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 272px;
+    height: auto;
+
+    aspect-ratio: 1 / 1;
+
+    border-radius: 50%;
+    background-color: colors.$color__white;
+
+    z-index: 1;
+
+    transition: color 0.3s ease-in-out;
+
+    cursor: url("../../../public/assets/images/icons/pointer/pointer.svg") 3 0, auto;
+
+    &::before {
+        position: absolute;
+
+        content: "";
+
+        width: 272px;
+        height: auto;
+
+        aspect-ratio: 1 / 1;
+
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        // top: calc(-1 * (272px / 24));
+        // transform: translateY();
+        // top: -44px;
+        // left: -44px;
+        // transform: translateX(-50%);
+
+        border-radius: 50%;
+        background-color: rgba($color: colors.$color__white, $alpha: 0);
+
+        will-change: width, background-color, color;
+        transition: width 0.3s ease-in-out, background-color 0.3s ease-in-out;
+
+        z-index: 0;
+    }
+
+    &:hover {
+        @include typography.tp-4--dark-blue--half-opacity;
+
+        &::before {
+            width: calc(272px + 88px * 2);
+            background-color: rgba($color: colors.$color__white, $alpha: 10%);
+        }
+    }
+}
+
+//? --- MOBILE ---
+//? --------------
+@media (max-width: 767px) {
+    .explore-btn {
+        width: 144px;
+
+        &::before {
+            width: 144px;
+        }
+
+        &:hover {
+            &::before {
+                width: calc(144px + 88px * 2);
+            }
+        }
+    }
+}
