@@ -1,0 +1,13 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "npm",
+            "script": "watch:scss:all",
+            "group": "build",
+            "problemMatcher": [],
+            "label": "npm: watch:scss:all",
+            "detail": "npm-run-all --parallel watch:scss watch:scss:min"
+        }
+    ]
+}
