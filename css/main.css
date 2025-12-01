@@ -118,47 +118,47 @@ html {
     overflow-y: auto;
     width: 100%;
     min-height: 100vh;
-    background-image: url("assets/images/background/homepage/homepage_background__desktop.jpg");
+    background-image: url("../assets/images/background/homepage/homepage_background__desktop.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .body--destination {
-    background-image: url("assets/images/background/destination/destination_background__desktop.jpg");
+    background-image: url("../assets/images/background/destination/destination_background__desktop.jpg");
 }
 .body--crew {
-    background-image: url("assets/images/background/crew/crew_background__desktop.jpg");
+    background-image: url("../assets/images/background/crew/crew_background__desktop.jpg");
 }
 .body--technology {
-    background-image: url("assets/images/background/technology/technology_background__desktop.jpg");
+    background-image: url("../assets/images/background/technology/technology_background__desktop.jpg");
 }
 
 @media (min-width: 768px) and (max-width: 1439px) {
     .body {
-        background-image: url("assets/images/background/homepage/homepage_background__tablet.jpg");
+        background-image: url("../assets/images/background/homepage/homepage_background__tablet.jpg");
     }
     .body--destination {
-        background-image: url("assets/images/background/destination/destination_background__tablet.jpg");
+        background-image: url("../assets/images/background/destination/destination_background__tablet.jpg");
     }
     .body--crew {
-        background-image: url("assets/images/background/crew/crew_background__tablet.jpg");
+        background-image: url("../assets/images/background/crew/crew_background__tablet.jpg");
     }
     .body--technology {
-        background-image: url("assets/images/background/technology/technology_background__tablet.jpg");
+        background-image: url("../assets/images/background/technology/technology_background__tablet.jpg");
     }
 }
 @media (max-width: 767px) {
     .body {
-        background-image: url("assets/images/background/homepage/homepage_background__mobile.jpg");
+        background-image: url("../assets/images/background/homepage/homepage_background__mobile.jpg");
     }
     .body--destination {
-        background-image: url("assets/images/background/destination/destination_background__mobile.jpg");
+        background-image: url("../assets/images/background/destination/destination_background__mobile.jpg");
     }
     .body--crew {
-        background-image: url("assets/images/background/crew/crew_background__mobile.jpg");
+        background-image: url("../assets/images/background/crew/crew_background__mobile.jpg");
     }
     .body--technology {
-        background-image: url("assets/images/background/technology/technology_background__mobile.jpg");
+        background-image: url("../assets/images/background/technology/technology_background__mobile.jpg");
     }
 }
 .wrapper {
@@ -266,7 +266,7 @@ html {
     column-gap: 12px;
     width: auto;
     min-height: 96px;
-    cursor: url("assets/images/icons/pointer/pointer.svg") 3 0, auto;
+    cursor: url("../assets/images/icons/pointer/pointer.svg") 3 0, auto;
 }
 .site-navigation__link::before {
     font-family: "Barlow Condensed", sans-serif;
@@ -395,7 +395,7 @@ html {
     padding-bottom: 13px;
     will-change: color;
     transition: color 0.3s ease-in-out;
-    cursor: url("assets/images/icons/pointer/pointer.svg") 3 0, auto;
+    cursor: url("../assets/images/icons/pointer/pointer.svg") 3 0, auto;
 }
 @media (max-width: 767px) {
     .tab-panel-navigation__button {
@@ -454,7 +454,7 @@ html {
     opacity: 17.44%;
     will-change: opacity;
     transition: opacity 0.3s ease-in-out;
-    cursor: url("assets/images/icons/pointer/pointer.svg") 3 0, auto;
+    cursor: url("../assets/images/icons/pointer/pointer.svg") 3 0, auto;
 }
 .tab-panel-pagination__button:hover {
     opacity: 50%;
@@ -491,7 +491,7 @@ html {
     will-change: color, border-color, background-color;
     transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
     opacity: 100%;
-    cursor: url("assets/images/icons/pointer/pointer.svg") 3 0, auto;
+    cursor: url("../assets/images/icons/pointer/pointer.svg") 3 0, auto;
 }
 @media (min-width: 768px) and (max-width: 1439px) {
     .tab-panel-pagination--technology .tab-panel-pagination__button {
@@ -557,7 +557,7 @@ html {
     padding-left: 64px;
     z-index: 1;
     line-height: 0;
-    cursor: url("assets/images/icons/pointer/pointer.svg") 3 0, auto;
+    cursor: url("../assets/images/icons/pointer/pointer.svg") 3 0, auto;
 }
 .logo-btn__img {
     min-width: -moz-fit-content;
@@ -615,7 +615,7 @@ html {
     background-color: #fff;
     z-index: 1;
     transition: color 0.3s ease-in-out;
-    cursor: url("assets/images/icons/pointer/pointer.svg") 3 0, auto;
+    cursor: url("../assets/images/icons/pointer/pointer.svg") 3 0, auto;
 }
 @media (min-width: 768px) and (max-width: 1439px) {
     .explore-btn {
