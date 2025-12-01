@@ -2,7 +2,7 @@
 node_modules/
 
 # Ignore .vscode/ folder
-.vscode/
+#.vscode/
 
 # Ignore all CSS files and folders
 css/
