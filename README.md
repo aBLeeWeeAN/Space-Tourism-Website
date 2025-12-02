@@ -127,7 +127,7 @@ Please follow the steps below to build and view this website locally.
 
 ### Prerequisites
 
-First, you need to install [Node.js][Node.js-url] on your computer. Once installed, download this repository as a ZIP archive or clone it using [Git][Git-url] to any folder on your operating system, for example:
+First, you need to install [Node.js][Node.js-url] runtime on your computer. Once installed, download this repository as a ZIP archive or clone it using [Git][Git-url] to any folder on your operating system, for example:
 
 * git
 
@@ -135,7 +135,7 @@ First, you need to install [Node.js][Node.js-url] on your computer. Once install
   git clone https://github.com/aBLeeWeeAN/Space-Tourism-Website
   ```
 
-Then use this command to download all project dependencies via the [Node.js][Node.js-url] framework:
+Then use this command to download all project dependencies via the [Node.js][Node.js-url] runtime:
 
 * npm
 
