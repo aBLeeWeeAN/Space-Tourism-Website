@@ -162,7 +162,7 @@ To convert [Sass/SCSS][Sass-url] files to [CSS][CSS-url] files and [TS][TypeScri
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-After completing the steps in the [**Getting Started**](#getting-started) section, you can view this site manually in any [supported browser](#supported-browsers) — simply open the index.html file from the project's **public/** folder.
+After completing the steps in the [**Getting Started**](#getting-started) section, you can view this site manually in any [supported browser](#supported-browsers) — simply open the **_index.html_** file from the project's **_public/_** folder.
 
 To launch the site automatically, use the following npm command:
 
