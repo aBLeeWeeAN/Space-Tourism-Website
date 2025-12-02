@@ -241,7 +241,7 @@ This project is [MIT][license-url] licensed.
 
 
 
-[website-preview]: images/website_preview.png
+[website-preview]: public/assets/images/website_preview.png
 
 
 
