@@ -65,8 +65,8 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#author">Author</a></li>
     <li><a href="#license">License</a></li>
+    <li><a href="#author">Author</a></li>
   </ol>
 </details>
 
@@ -176,6 +176,16 @@ To launch the site automatically, use the following npm command:
 
 
 
+<!-- LICENSE -->
+## License
+
+Copyright © 2025 [Vladimir Nikulin](https://github.com/aBLeeWeeAN).<br />
+This project is [MIT][license-url] licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
 <!-- CONTACT -->
 ## Author
 
@@ -183,16 +193,6 @@ To launch the site automatically, use the following npm command:
 
 * Github: [@aBLeeWeeAN](https://github.com/aBLeeWeeAN)
 * Email: [mail.jorey@gmail.com](mailto:mail.jorey@gmail.com)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- LICENSE -->
-## License
-
-Copyright © 2025 [Vladimir Nikulin](https://github.com/aBLeeWeeAN).<br />
-This project is [MIT][license-url] licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
