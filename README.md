@@ -112,7 +112,7 @@ Below is a list of browsers in which this website was displayed without errors o
 > [!IMPORTANT]
 > To test the website's display, the latest browser versions were used at the time of release of version 1.0.0 for this project.
 > 
-> Date of the last check - 03.12.2025
+> **Date of the last check - 03.12.2025**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
