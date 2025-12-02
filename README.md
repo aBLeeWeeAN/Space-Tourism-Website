@@ -97,7 +97,7 @@ This website is made using the following technologies:
 
 ### Supported Browsers
 
-Below is a list of browsers in which this website was displayed without errors or bugs:
+Below is a list of browsers in which this website was tested and rendered correctly:
 
 * [![Opera GX][OperaGX-logo]][OperaGX-url]
 * [![Google Chrome][GoogleChrome-logo]][GoogleChrome-url]
@@ -110,9 +110,9 @@ Below is a list of browsers in which this website was displayed without errors o
 <br />
 
 > [!IMPORTANT]
-> To test the website's display, the latest browser versions were used at the time of release of version 1.0.0 for this project.
+> Browser compatibility was verified for the 1.0.0 release. The site displayed correctly in the latest versions of all major browsers at that time.
 > 
-> **Date of the last check - 03.12.2025**
+> **Last verification date: 3 December 2025**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -127,7 +127,7 @@ Please follow the steps below to build and view this website locally.
 
 ### Prerequisites
 
-First, you need to install [Node.js][Node.js-url] runtime on your computer. Once installed, download this repository as a ZIP archive or clone it using [Git][Git-url] to any folder on your operating system, for example:
+First, install [Node.js][Node.js-url]. Then, download this repository as a ZIP archive or clone it using [Git][Git-url] to a folder on your system, for example:
 
 * git
 
@@ -135,7 +135,7 @@ First, you need to install [Node.js][Node.js-url] runtime on your computer. Once
   git clone https://github.com/aBLeeWeeAN/Space-Tourism-Website
   ```
 
-Then use this command to download all project dependencies via the [Node.js][Node.js-url] runtime:
+Navigate to the project folder in your terminal and run the following command to install all project dependencies:
 
 * npm
 
@@ -145,9 +145,9 @@ Then use this command to download all project dependencies via the [Node.js][Nod
 
 ### Build Static Files
 
-_Please follow the instructions below to generate all static files for this site._
+_Please follow the steps below to build the static site files._
 
-To convert [Sass/SCSS][Sass-url] files to [CSS][CSS-url] files and [TS][TypeScript-url] files to [JS][JavaScript-url] files, use the following command (don't worry about any warnings):
+To compile [Sass/SCSS][Sass-url] files into [CSS][CSS-url] and [TypeScript][TypeScript-url] files into [JavaScript][JavaScript-url], run the following build command (you can ignore any warnings):
 
 * npm
 
@@ -162,9 +162,9 @@ To convert [Sass/SCSS][Sass-url] files to [CSS][CSS-url] files and [TS][TypeScri
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-After completing the steps in the [**Getting Started**](#getting-started) section, you can view this site manually in any [supported browser](#supported-browsers) — simply open the **_index.html_** file from the project's **_public/_** folder.
+After completing the steps in the [**Getting Started**](#getting-started) section, you can view the site manually by opening the **_index.html_** file from the **_public/_** folder in any [supported browser](#supported-browsers).
 
-To launch the site automatically, use the following npm command:
+Alternatively, to launch a local development server, use the following command:
 
 * npm
 
