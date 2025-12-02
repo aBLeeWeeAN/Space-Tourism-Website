@@ -169,7 +169,7 @@ To launch the site automatically, use the following npm command:
 * npm
 
   ```sh
-  npm serve
+  npm run serve
   ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
