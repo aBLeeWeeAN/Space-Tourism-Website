@@ -32,22 +32,21 @@
   <h1 align="center">Space Tourism Website</h1>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
-    <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
+    A multi-page website built using a Figma layout. It supports desktops, tablets and phones.
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
+    <a href="https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3">Original Layout</a>
     &middot;
-    <a href="https://github.com/othneildrew/Best-README-Template/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
+    <a href="https://ableeweean.github.io/Space-Tourism-Website/">View Demo</a>
     &middot;
-    <a href="https://github.com/othneildrew/Best-README-Template/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
+    <a href="https://github.com/aBLeeWeeAN/Space-Tourism-Website/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
   </p>
 </div>
 
 
 
 <!-- TABLE OF CONTENTS -->
+<br />
 <details>
   <summary>Table of Contents</summary>
   <ol>
@@ -55,19 +54,19 @@
       <a href="#about-the-project">About The Project</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
+        <li><a href="#supported-browsers">Supported Browsers</a></li>
       </ul>
     </li>
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
+        <li><a href="#build-static-files">Build Static Files</a></li>
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#license">License</a></li>
     <li><a href="#author">Author</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
+    <li><a href="#license">License</a></li>
   </ol>
 </details>
 
@@ -76,20 +75,9 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Website Preview][website-preview]](https://ableeweean.github.io/Space-Tourism-Website/)
+This project is part of my portfolio and demonstrates my skills in creating websites based on client-provided mockups - either in [Figma](https://www.figma.com/) or [Photoshop](https://www.adobe.com/products/photoshop.html). You can see a **preview of the website** in the image below:
 
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
-
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
-
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
-
-Use the `BLANK_README.md` to get started.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+[![Space Tourism Website Preview][website-preview]](https://ableeweean.github.io/Space-Tourism-Website/)
 
 
 
@@ -105,6 +93,27 @@ This website is made using the following technologies:
 * [![Node.js][Node.js-logo]][Node.js-url]
 * [![Git][Git-logo]][Git-url]
 
+
+
+### Supported Browsers
+
+Below is a list of browsers in which this website was displayed without errors or bugs:
+
+* [![Opera GX][OperaGX-logo]][OperaGX-url]
+* [![Google Chrome][GoogleChrome-logo]][GoogleChrome-url]
+* [![Microsoft Edge][MicrosoftEdge-logo]][MicrosoftEdge-url]
+* [![Firefox][Firefox-logo]][Firefox-url]
+* [![Arc][Arc-logo]][Arc-url]
+* [![Brave][Brave-logo]][Brave-url]
+* [![Vivaldi][Vivaldi-logo]][Vivaldi-url]
+
+<br />
+
+> [!IMPORTANT]
+> To check the website display, the latest browser versions were used at the time of release 1.0.0 for this website.
+> 
+> Date of the last check - 03.12.2025
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
@@ -112,41 +121,39 @@ This website is made using the following technologies:
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+Please follow the steps below to build and view this website locally.
 
 
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
+First, you need to install [Node.js][Node.js-url] on your computer. Once installed, download this repository as a ZIP archive or clone it using [Git][Git-url] to any folder on your operating system, for example:
+
+* git
+
   ```sh
-  npm install npm@latest -g
+  git clone https://github.com/aBLeeWeeAN/Space-Tourism-Website
   ```
 
-### Installation
+Then use this command to download all project dependencies via the [Node.js][Node.js-url] framework:
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
+* npm
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/github_username/repo_name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
-5. Change git remote url to avoid accidental pushes to base project
-   ```sh
-   git remote set-url origin github_username/repo_name
-   git remote -v # confirm the changes
-   ```
+  ```sh
+  npm install
+  ```
+
+### Build Static Files
+
+_Please follow the instructions below to generate all static files for this site._
+
+To convert [Sass/SCSS][Sass-url] files to [CSS][CSS-url] files and [TS][TypeScript-url] files to [JS][JavaScript-url] files, use the following command (don't worry about any warnings):
+
+* npm
+
+  ```sh
+  npm run build:release
+  ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -155,19 +162,15 @@ _Below is an example of how you can instruct your audience on installing and set
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+After completing the steps in the [**Getting Started**](#getting-started) section, you can view this site manually in any [supported browser](#supported-browsers) — simply open the index.html file from the project's **public/** folder.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+To launch the site automatically, use the following npm command:
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+* npm
 
-
-
-<!-- LICENSE -->
-## License
-
-Copyright © 2025 [Vladimir Nikulin](https://github.com/aBLeeWeeAN).<br />
-This project is [MIT][license-url] licensed.
+  ```sh
+  npm serve
+  ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -185,19 +188,11 @@ This project is [MIT][license-url] licensed.
 
 
 
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
+<!-- LICENSE -->
+## License
 
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
-
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
-* [Malven's Grid Cheatsheet](https://grid.malven.co/)
-* [Img Shields](https://shields.io)
-* [GitHub Pages](https://pages.github.com)
-* [Font Awesome](https://fontawesome.com)
-* [React Icons](https://react-icons.github.io/react-icons/search)
+Copyright © 2025 [Vladimir Nikulin](https://github.com/aBLeeWeeAN).<br />
+This project is [MIT][license-url] licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -227,6 +222,8 @@ Use this space to list resources you find helpful and would like to give credit 
 [Git-logo]: https://img.shields.io/badge/Git-F05032?logo=git&logoColor=fff&style=for-the-badge
 [Git-url]: https://git-scm.com/
 
+
+
 [contributors-shield]: https://img.shields.io/github/contributors/aBLeeWeeAN/Space-Tourism-Website.svg?style=for-the-badge
 [contributors-url]: https://github.com/aBLeeWeeAN/Space-Tourism-Website/graphs/contributors
 
@@ -242,10 +239,31 @@ Use this space to list resources you find helpful and would like to give credit 
 [license-shield]: https://img.shields.io/github/license/aBLeeWeeAN/Space-Tourism-Website.svg?style=for-the-badge
 [license-url]: https://github.com/aBLeeWeeAN/Space-Tourism-Website/blob/master/LICENSE
 
+
+
 [website-preview]: images/website_preview.png
 
-[Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
-[Bootstrap-url]: https://getbootstrap.com
 
-[JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
-[JQuery-url]: https://jquery.com 
+
+[OperaGX-logo]: https://img.shields.io/badge/Opera%20GX-EE2950?logo=operagx&logoColor=fff&style=for-the-badge
+[OperaGX-url]: https://www.opera.com/gx/
+
+[GoogleChrome-logo]: https://img.shields.io/badge/Google%20Chrome-4285F4?logo=GoogleChrome&logoColor=white&style=for-the-badge
+[GoogleChrome-url]: https://www.google.com/chrome/
+
+[MicrosoftEdge-logo]: https://custom-icon-badges.demolab.com/badge/Microsoft%20Edge-2771D8?logo=edge-white&logoColor=white&style=for-the-badge
+[MicrosoftEdge-url]: https://www.microsoft.com/en-us/edge/
+
+[Firefox-logo]: https://img.shields.io/badge/Firefox-FF7139?logo=firefoxbrowser&logoColor=white&style=for-the-badge
+[Firefox-url]: https://www.firefox.com/
+
+[Arc-logo]: https://img.shields.io/badge/Arc-FCBFBD?logo=arc&logoColor=000&style=for-the-badge
+[Arc-url]: https://arc.net/
+
+[Brave-logo]: https://img.shields.io/badge/Brave-FB542B?logo=Brave&logoColor=white&style=for-the-badge
+[Brave-url]: https://brave.com/
+
+[Vivaldi-logo]: https://img.shields.io/badge/Vivaldi-EF3939?logo=Vivaldi&logoColor=white&style=for-the-badge
+[Vivaldi-url]: https://vivaldi.com/
+
+
