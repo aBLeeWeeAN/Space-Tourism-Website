@@ -25,7 +25,8 @@
         will-change: opacity;
         transition: opacity 0.3s ease-in-out;
 
-        cursor: url("../../../public/assets/images/icons/pointer/pointer.svg") 3 0, auto;
+        // cursor: url("../../../public/assets/images/icons/pointer/pointer.svg") 3 0, auto;
+        cursor: url("/assets/images/icons/pointer/pointer.svg") 3 0, auto;
 
         &:hover {
             opacity: 50%;
@@ -74,7 +75,8 @@
 
             opacity: 100%;
 
-            cursor: url("../../../public/assets/images/icons/pointer/pointer.svg") 3 0, auto;
+            // cursor: url("../../../public/assets/images/icons/pointer/pointer.svg") 3 0, auto;
+            cursor: url("/assets/images/icons/pointer/pointer.svg") 3 0, auto;
 
             &:hover {
                 border-color: colors.$color__white;

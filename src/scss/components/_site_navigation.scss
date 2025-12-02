@@ -47,7 +47,8 @@
         min-height: 96px;
 
         // cursor: pointer;
-        cursor: url("../../../public/assets/images/icons/pointer/pointer.svg") 3 0, auto;
+        // cursor: url("../../../public/assets/images/icons/pointer/pointer.svg") 3 0, auto;
+        cursor: url("/assets/images/icons/pointer/pointer.svg") 3 0, auto;
 
         &::before {
             @include typography.tp-8--bold;
