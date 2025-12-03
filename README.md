@@ -75,7 +75,17 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-This project is part of my portfolio and demonstrates my skills in creating websites based on client-provided mockups - either in [Figma](https://www.figma.com/) or [Photoshop](https://www.adobe.com/products/photoshop.html). You can see a **preview of the website** in the image below:
+This project is part of my portfolio and demonstrates my skills in creating websites based on client-provided mockups - either in [Figma](https://www.figma.com/) or [Photoshop](https://www.adobe.com/products/photoshop.html).
+
+The main goal was to build a clean, high-performance front-end foundation without relying on external UI frameworks or a CMS backend.
+
+Key technical notes:
+
+* **Responsiveness**: Implemented purely with CSS media queries.
+* **Content**: All content is static (no [WordPress][WordPress-url] or similar CMS).
+* **Build Process**: [Sass/SCSS][Sass-url] and [TypeScript][TypeScript-url] source files are compiled into standard [CSS][CSS-url] and [JavaScript][JavaScript-url]. This approach keeps the source code organized and makes the project versatile as a starting template for other front-end solutions.
+
+You can see a **preview of the website** in the image below:
 
 [![Space Tourism Website Preview][website-preview]](https://ableeweean.github.io/Space-Tourism-Website/)
 
@@ -147,7 +157,7 @@ Navigate to the project folder in your terminal and run the following command to
 
 _Please follow the steps below to build the static site files._
 
-To compile [Sass/SCSS][Sass-url] files into [CSS][CSS-url] and [TypeScript][TypeScript-url] files into [JavaScript][JavaScript-url], run the following build command (you can ignore any warnings):
+To compile Sass/SCSS files into CSS and TypeScript files into JavaScript, run the following build command (you can ignore any warnings):
 
 * npm
 
@@ -265,5 +275,10 @@ This project is [MIT][license-url] licensed.
 
 [Vivaldi-logo]: https://img.shields.io/badge/Vivaldi-EF3939?logo=Vivaldi&logoColor=white&style=for-the-badge
 [Vivaldi-url]: https://vivaldi.com/
+
+
+
+[WordPress-url]: https://wordpress.com/
+
 
 
