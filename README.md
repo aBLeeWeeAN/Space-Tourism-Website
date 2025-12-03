@@ -127,7 +127,7 @@ Please follow the steps below to build and view this website locally.
 
 ### Prerequisites
 
-First, install [Node.js][Node.js-url]. Then, download this repository as a ZIP archive or clone it using [Git][Git-url] to a folder on your system, for example:
+First, install [Node.js][Node.js-url]. Then, download this repository as a ZIP archive or clone it using [Git][Git-url] to a folder on your system. To clone it, you can use the following Git command:
 
 * git
 
