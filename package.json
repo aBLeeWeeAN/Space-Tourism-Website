@@ -38,8 +38,8 @@
         "watch": "npm-run-all --parallel watch:ts:all watch:scss:all",
         "build:debug": "npm run build:ts:all && npm run build:scss:all",
         "build:release": "npm run clean && npm run build:ts:min && npm run build:scss:min",
-        "serve": "browser-sync start --server \"public\" --files \"public/**/*\"",
-        "start": "npm run build:release && npm run serve"
+        "server": "browser-sync start --server \"public\" --files \"public/**/*\"",
+        "start": "npm run build:release && npm run server"
     },
     "dependencies": {
         "browser-sync": "^3.0.4",
