@@ -247,7 +247,7 @@ This project is [MIT][license-url] licensed.
 [issues-url]: https://github.com/aBLeeWeeAN/Space-Tourism-Website/issues
 
 [license-shield]: https://img.shields.io/github/license/aBLeeWeeAN/Space-Tourism-Website.svg?style=for-the-badge
-[license-url]: https://github.com/aBLeeWeeAN/Space-Tourism-Website/blob/master/LICENSE
+[license-url]: https://github.com/aBLeeWeeAN/Space-Tourism-Website/blob/main/LICENSE
 
 
 
